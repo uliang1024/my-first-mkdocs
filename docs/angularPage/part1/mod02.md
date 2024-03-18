@@ -1,4 +1,4 @@
-# Getting started
+<!-- # Getting started
 
 Material for MkDocs is a powerful documentation framework on top of [MkDocs],
 a static site generator for project documentation.[^1] If you're familiar with
@@ -174,4 +174,4 @@ Next, install the theme and its dependencies with:
 pip install -e mkdocs-material
 ```
 
-  [GitHub]: https://github.com/squidfunk/mkdocs-material
+  [GitHub]: https://github.com/squidfunk/mkdocs-material -->

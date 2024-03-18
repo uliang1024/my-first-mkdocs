@@ -2,9 +2,9 @@
 
 || 開發者/發行年| JavaScript or TypeScript | 市場占有率(名次) |
 | --- | --- | --- | --- |
-| <div><img src="/assets/Angular.png" alt="Angular" width="100" height="100"></div> | <div>Google/2010</div> | <div>Angular 2 之後轉向使用TypeScript</div> | <div>2</div> |
-| <div><img src="/assets/React.png" alt="React" width="100" height="100"></div> | <div>Facebook/2013</div> | <div>JavaScript</div> | <div>1</div> |
-| <div><img src="/assets/Vue.png" alt="Vue" width="100" height="100"></div> | <div>Evan You/2014</div> | <div>Vue3 計畫轉向使用TypeScript</div> | <div>3</div> |
+| <div><img src="../../../assets/Angular.png" alt="Angular" width="100" height="100"></div> | <div>Google/2010</div> | <div>Angular 2 之後轉向使用TypeScript</div> | <div>2</div> |
+| <div><img src="../../../assets/React.png" alt="React" width="100" height="100"></div> | <div>Facebook/2013</div> | <div>JavaScript</div> | <div>1</div> |
+| <div><img src="../../../assets/Vue.png" alt="Vue" width="100" height="100"></div> | <div>Evan You/2014</div> | <div>Vue3 計畫轉向使用TypeScript</div> | <div>3</div> |
 
 ## 認識 Angular Framework
 
