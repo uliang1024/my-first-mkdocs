@@ -4,7 +4,6 @@ site_dir: public
 nav:
   - Home: index.md
   - Angular筆記:
-      - "Angular介紹": angularPage/index.md
       - "第一章 前端網頁應用的利器Angular": angularPage/part1/mod01.md
       - "第二章 Module 與 MVC 設計模型": angularPage/part1/mod02.md
       - "第三章 初探 Angular Route & Navigation": angularPage/part1/mod03.md
@@ -26,7 +25,7 @@ nav:
 
 theme:
   name: material
-  logo: assets/Angular_full_color_logo.svg.png
+  logo: assets/Angular.png
   features:
     # 即時載入
     - navigation.instant
@@ -90,6 +89,7 @@ extra:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
+      annotation: material/arrow-right-circle
 
 plugins:
   - search:
@@ -106,8 +106,14 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  # 內容選項卡
+  - pymdownx.tabbed:
+      alternate_style: true
   - admonition
   - pymdownx.details
+  #Plugins for MkDocs
+  - neoteroi.timeline
 
 extra_css:
     - assets/css/extra.css
+    - assets/css/neoteroi-timeline.css

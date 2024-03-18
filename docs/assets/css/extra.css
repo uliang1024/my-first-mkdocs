@@ -1,0 +1,24 @@
+/* .md-grid {
+    max-width: 70rem;
+}
+
+.md-sidebar {
+    width: 17.1rem;
+}
+
+@supports selector(::-webkit-scrollbar) {
+    [dir=ltr] .md-sidebar__inner {
+        padding-right: 0;
+    }
+} */
+
+th {
+    text-align: center !important;
+}
+
+td div {
+    display: flex;
+    height: 131.47px;
+    align-items: center;
+    justify-content: center;
+}
