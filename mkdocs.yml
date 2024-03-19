@@ -1,5 +1,18 @@
 site_name: My First MkDocs
 site_dir: public
+site_url: https://my-first-mkdocs-uliang1024-6f58a385c5137f79eb07246f3b7f965380de.gitlab.io
+
+repo_name: My GitLab Project
+repo_url: https://gitlab.com/uliang1024/my-first-mkdocs.git
+
+edit_uri: blob/main/docs/
+
+site_description: "This is a documentation site for my project."
+site_author: "YouLiangChen"
+copyright: "Copyright © 2024 YouLiangChen. All Rights Reserved."
+
+remote_branch: main
+remote_name: origin
 
 nav:
   - Home: index.md
@@ -17,25 +30,25 @@ nav:
       - "Material UI": cssFrameworks/materialUI.md
       - "Tailwind CSS": cssFrameworks/tailwindCss.md
   - markdown語法: markdownPage/index.md
+  - Angular Courses 2024: "https://angular-courses-2024-work-systex-ab5431191dc698292ae12b22519d6d.gitlab.io/"
 
+exclude_docs: |
+  api-config.json
+  drafts/
+  /requirements.txt
+  *.py
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+
+# 主題設置
 theme:
   name: material
   logo: assets/Angular.png
-  features:
-    # 即時載入
-    - navigation.instant
-    # 進度指示器
-    - navigation.instant.progress
-    # 導航選項卡
-    - navigation.tabs
-    # 側邊欄群組
-    - navigation.sections
-    - navigation.indexes
-    # 上方呈現麵包屑導航
-    - navigation.path
-    # 返回頂部按鈕
-    - navigation.top
-
+  favicon: assets/Angular.png
+  # color
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -61,7 +74,33 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-    
+  font:
+    text: Noto Sans
+  features:
+    # 搜尋建議
+    - search.suggest
+    # 搜尋突出顯示
+    - search.highlight
+    # 搜尋分享
+    - search.share
+    # 導航選項卡
+    - navigation.tabs
+    # 側邊欄群組
+    - navigation.sections
+    - navigation.indexes
+    # 上方呈現麵包屑導航
+    - navigation.path
+    # 返回頂部按鈕
+    - navigation.top
+
+# CSS檔
+extra_css:
+    - css/extra.css
+    - css/neoteroi-timeline.css
+# JS檔
+extra_javascript:
+  - js/script.js
+
 extra:
   # 設定頁腳連結
   social:
@@ -85,10 +124,13 @@ extra:
       example: octicons/beaker-16
       quote: octicons/quote-16
       annotation: material/arrow-right-circle
-
-plugins:
-  - search:
-      lang: ja
+  consent:
+    title: Cookie 同意
+    description:
+      我們也使用 cookie 來識別您的重複造訪和偏好
+      衡量我們文件的有效性以及使用者是否
+      找到他們正在尋找的東西。 經您同意，您正在幫助我們
+      使我們的文件變得更好。
 
 markdown_extensions:
   - attr_list
@@ -115,9 +157,8 @@ markdown_extensions:
   #Plugins for MkDocs
   - neoteroi.timeline
 
-extra_css:
-    - assets/css/extra.css
-    - assets/css/neoteroi-timeline.css
-
-extra_javascript:
-  - assets/js/script.js
+plugins:
+  - search:
+      lang: ja
+  # - privacy
+  - social

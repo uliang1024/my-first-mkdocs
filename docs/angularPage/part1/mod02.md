@@ -27,6 +27,7 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 
 ```
+
 <div class="result" markdown>
 
 **declarations**：模組中可宣告的物件，像是Component、Directive、Pipe，此模組所擁有的元件
@@ -55,7 +56,7 @@ export class AppModule { }
 - 是 應用程式 的檢視元素
 - 由 HTML、TypeScript、CSS 組合而成的
 - 每個應用程式會有個  AppComponent
-    - 是應用程式的根元件 以 <app-root> 載入到 Index.html
+  - 是應用程式的根元件 以 <app-root\> 載入到 Index.html
 
 ```html title="Index.html"
 <body>
@@ -96,9 +97,9 @@ export class AppModule { }
 Angular 使用結構化指令操作DOM。具有重塑DOM結構的能力，可能是新增、移除或是維護元素。
 
 - 使用 * (星號) 為字首
-    - *ngFor：重複顯示每一個單項
-    - *ngIf：顯示項目，條件不符整個元素不存在
-    - *ngSwitch：類似 JavaScript 的 switch，只會有一個項目被顯示
+  - *ngFor：重複顯示每一個單項
+  - *ngIf：顯示項目，條件不符整個元素不存在
+  - *ngSwitch：類似 JavaScript 的 switch，只會有一個項目被顯示
 
 ---
 
@@ -232,11 +233,11 @@ ng g cl Picture --project mod02
 
 ```ts title="picture.ts"
 export class Picture {
-	constructor(
+ constructor(
         public PictureID: number,
         public Url: string,
         public Subject: string,
-		public Author:string){
+  public Author:string){
 
         }
 }
@@ -251,17 +252,17 @@ ng g c page2
 
 ```ts title="page2.component.ts"
 @Component({
-	selector:'page2',
-	templateUrl:'./page2.component.html',
-	styles: []
+ selector:'page2',
+ templateUrl:'./page2.component.html',
+ styles: []
 })
 
 export class Page2Component implements OnInit {
-	public pic = picture
-	constructor(){}
-	ngOnInit():void {
-	
-	}
+ public pic = picture
+ constructor(){}
+ ngOnInit():void {
+ 
+ }
 }
 ```
 
@@ -289,23 +290,23 @@ step3：物件陣列 / *ngFor / MVC
 ```ts title="page2.component.ts"
 export class Page2Component {
     // public pic = picture
-	public pictures:Picture[];
-		constructor(){
-			this.pictures=[
+ public pictures:Picture[];
+  constructor(){
+   this.pictures=[
                 picture,
-				new Picture(2,"https://XXX", "圖片名稱", "作者"),
-				new Picture(3,"https://XXX", "圖片名稱", "作者"),
-				new Picture(4,"https://XXX", "圖片名稱", "作者"),
+    new Picture(2,"https://XXX", "圖片名稱", "作者"),
+    new Picture(3,"https://XXX", "圖片名稱", "作者"),
+    new Picture(4,"https://XXX", "圖片名稱", "作者"),
             ]
-		}
+  }
 }
 ```
 
 ```html title="page2.component.html"
 <div *ngFor="let pic of pictures">
-	ID: {{ pic.PictureID }} -
-	Subject: {{ pic.Subject}} -
-	Author: {{ pic.Author}} <br/>
-	<img src="{{pic.Url}}" height="200" />
+ ID: {{ pic.PictureID }} -
+ Subject: {{ pic.Subject}} -
+ Author: {{ pic.Author}} <br/>
+ <img src="{{pic.Url}}" height="200" />
 </div>
 ```
