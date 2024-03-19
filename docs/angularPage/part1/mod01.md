@@ -105,33 +105,38 @@ ng serve -o (1)
 
 ## 啟動順利
 
-::timeline::
+::timeline:: 
 
 [
     {
         "title": "index.html",
-        "content": "angular.json 裡面會先執行index.html",
+        "content": "Angular應用程式的入口文件，包含HTML結構。",
         "icon": ":octicons-sun-16:",
+        "sub_title": 入口文件
     },
     {
         "title": "main.ts",
-        "content": "angular.json 再執行main.ts",
+        "content": "Angular應用程式的JavaScript入口點，負責加載和啟動應用程式。",
         "icon": ":octicons-sun-16:",
+        "sub_title": 啟動腳本
     },
     {
         "title": "app.module.ts",
-        "content": " main.ts 匯入 import { AppModule } from './app/app.module';",
-        "icon": ":material-github:",
+        "content": "主要模塊文件，定義應用程式中的模塊、組件、指令等。",
+        "icon": ":octicons-sun-16:",
+        "sub_title": 主模組定義
     },
     {
         "title": "app.component.ts",
-        "content": "app.module.ts : bootstrap: [AppComponent]",
+        "content": "根組件，應用程式的主要組件。",
         "icon": ":octicons-sun-16:",
+        "sub_title": 根組件定義
     },
     {
         "title": "app.component.html",
-        "content": "最後 app.component : templateUrl: './app.component.html'",
+        "content": "根組件的HTML模板文件，用於定義根組件的外觀和佈局。",
         "icon": ":octicons-sun-16:",
+        "sub_title": 根組件模板
     }
 ]
 
