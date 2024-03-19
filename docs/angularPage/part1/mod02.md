@@ -1,177 +1,313 @@
-<!-- # Getting started
+模組化的目的：將巨大的應用程式拆開成一個一個的模塊，每個模塊可能包含特定功能的函式庫或元件。
 
-Material for MkDocs is a powerful documentation framework on top of [MkDocs],
-a static site generator for project documentation.[^1] If you're familiar with
-Python, you can install Material for MkDocs with [`pip`][pip], the Python
-package manager. If not, we recommend using [`docker`][docker].
+**JavaScript模組**(.js)：
 
-  [^1]:
-    In 2016, Material for MkDocs started out as a simple theme for MkDocs, but
-    over the course of several years, it's now much more than that – with the
-    many built-in plugins, settings, and countless customization abilities,
-    Material for MkDocs is now one of the simplest and most powerful frameworks
-    for creating documentation for your project.
+- **export**: 此程式可用於其他模組
+- **import**: 引入其他模組到此程式
+- **Angular 框架**採用
+  - Angular模組 使用 @ngModule 定義，metadata 供編譯使用
 
-  [MkDocs]: https://www.mkdocs.org
-  [pip]: #with-pip
-  [docker]: #with-docker
+``` typescript title="app.module.ts"
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 
-## Installation
+@NgModule({
+  declarations: [
+    AppComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 
-### with pip <small>recommended</small> { #with-pip data-toc-label="with pip" }
+```
+<div class="result" markdown>
 
-Material for MkDocs is published as a [Python package] and can be installed with
-`pip`, ideally by using a [virtual environment]. Open up a terminal and install
-Material for MkDocs with:
+**declarations**：模組中可宣告的物件，像是Component、Directive、Pipe，此模組所擁有的元件
 
-=== "Latest"
+**imports**：使用外部模組，引入到這個模組才可使用
+
+**providers**：加入服務提供者，會以執行階段動態注射的方式載入
+
+**bootstrap**：指定Angular 入口元件，Angular會建立這個元件
+
+</div>
+
+## 常用模組
+
+| 模組名稱             | 說明                                                  |
+| -------------------- | ----------------------------------------------------- |
+| `BrowserModule`      | @angular/platform-browser <br> 在瀏覽器執行應用程式時 |
+| `CommonModule`       | 使用 ngIf、ngFor                                      |
+| `FormsModule`        | 使用 ngModel及範本驅動表單時                           |
+| `ReactiveFormsModule`| 使用 響應式表單                                        |
+| `RouterModule`       | 使用 路由功能                                          |
+| `HttpClientModule`   | 與 遠端伺服器 連結時需要用到                           |
+
+## 認識元件 (Component)
+
+- 是 應用程式 的檢視元素
+- 由 HTML、TypeScript、CSS 組合而成的
+- 每個應用程式會有個  AppComponent
+    - 是應用程式的根元件 以 <app-root> 載入到 Index.html
+
+```html title="Index.html"
+<body>
+<app-root></app-root>
+</body>
+```
+
+- 每個元件要放入 @NgModule 的 declarations
+
+## 甚麼是 MVC 架構
+
+![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2Fd198e188-cb97-46f0-831e-8d2f3aef32e3%2FUntitled.png?table=block&id=824e30f9-f30b-4781-9687-a08aeaf61cd8&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+
+>圖片源自 [https://tw.alphacamp.co/blog/mvc-model-view-controller](https://tw.alphacamp.co/blog/mvc-model-view-controller)
+>
+> Model、View、Controller 的區分，是希望能把應用程式的內部運作歸納成不同的部門，讓每個部門各自負責不同的關注點。具體的行為是「把不同意義的程式碼放在不同的檔案裡」。
+>
+>1. **Model（模型）**：模型代表應用程式的資料結構。它處理應用程式的資料邏輯，並對應於資料庫、檔案系統或其他資料來源。模型負責檢索、儲存和修改資料，同時也定義了資料的結構和規則。
+>2. **View（視圖）**：視圖是應用程式的使用者介面的表示。它負責將模型中的資料呈現給使用者，通常以圖形界面（GUI）或網頁的形式呈現。視圖通常是動態的，它會根據模型的狀態而更新，以反映最新的資訊。
+>3. **Controller（控制器）**：控制器是模型和視圖之間的中介。它接收來自使用者的輸入，然後根據這些輸入更新模型的狀態或調用適當的視圖來呈現資料。控制器處理應用程式的流程控制和業務邏輯，並根據應用程式的需求來操作模型和視圖。
+
+## 加入一個 component
+
+=== "加入 component"
 
     ``` sh
-    pip install mkdocs-material
+    ng generate component [name]
     ```
 
-=== "9.x"
+=== "加入 component(縮寫)"
 
     ``` sh
-    pip install mkdocs-material=="9.*" # (1)!
+    ng g c [name]
     ```
 
-    1.  Material for MkDocs uses [semantic versioning][^2], which is why it's a
-        good idea to limit upgrades to the current major version.
+## 結構型指令（STRUCTURAL DIRECTIVES）
 
-        This will make sure that you don't accidentally [upgrade to the next
-        major version], which may include breaking changes that silently corrupt
-        your site. Additionally, you can use `pip freeze` to create a lockfile,
-        so builds are reproducible at all times:
+Angular 使用結構化指令操作DOM。具有重塑DOM結構的能力，可能是新增、移除或是維護元素。
 
-        ```
-        pip freeze > requirements.txt
-        ```
-
-        Now, the lockfile can be used for installation:
-
-        ```
-        pip install -r requirements.txt
-        ```
-
-  [^2]:
-    Note that improvements of existing features are sometimes released as
-    patch releases, like for example improved rendering of content tabs, as
-    they're not considered to be new features.
-
-This will automatically install compatible versions of all dependencies:
-[MkDocs], [Markdown], [Pygments] and [Python Markdown Extensions]. Material for
-MkDocs always strives to support the latest versions, so there's no need to
-install those packages separately.
+- 使用 * (星號) 為字首
+    - *ngFor：重複顯示每一個單項
+    - *ngIf：顯示項目，條件不符整個元素不存在
+    - *ngSwitch：類似 JavaScript 的 switch，只會有一個項目被顯示
 
 ---
 
-:fontawesome-brands-youtube:{ style="color: #EE0F0F" }
-__[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
-15m – Learn how to create and host a documentation site using Material for
-MkDocs on GitHub Pages in a step-by-step guide.
+## (實作2) 使用結構型指令
 
-  [How to set up Material for MkDocs]: https://www.youtube.com/watch?v=Q-YA_dA8C20
+step1：宣告一組陣列
+
+```ts title="page1.component.ts"
+export class Page1Component {
+  member = ['Jenny', 'Vivid', 'Kity', 'Linda'];
+}
+```
+
+step2：使用 *ngFor
+
+```html title="page1.component.html"
+<ul>
+  <li *ngFor='let item of member; let i = index'>
+    {{i}}:{{item}}
+  </li>
+</ul>
+```
+
+step3：使用 *ngIf
+
+```ts title="page1.component.ts"
+export class Page1Component {
+  // member = ['Jenny', 'Vivid', 'Kity', 'Linda'];
+  member = [];
+}
+```
+
+```html title="page1.component.html"
+<div *ngIf='member.length>0;else noMember'>
+  會員清單:
+  <ul>
+    <li *ngFor='let item of member;let i =index;let l=last'>
+      {{i+1}}: {{item}}
+    </li>
+  </ul>
+</div>
+<ng-template #noMember>
+  <div>目前沒有會員</div>
+</ng-template>
+```
+
+step4：*ngFor 加入 last 屬性的處理
+
+???+ note
+
+    *ngForOf 的屬性
+
+    ` *ngFor=”let item of member; let i = index; let o=odd”`
+ 
+    - index 屬性
+        - 提供以零為起始的索引數字
+    - Boolean 類的屬性
+        - first、last：若是首筆或尾筆為 true
+        - even、odd：奇數、偶數時為 true
+
+```ts title="page1.component.ts"
+export class Page1Component {
+  member = ['Jenny', 'Vivid', 'Kity', 'Linda'];
+  // member = [];
+}
+```
+
+```html title="page1.component.html"
+<div *ngIf='member.length>0;'>
+  會員清單:
+  <ul>
+    <li *ngFor='let item of member;let i =index;let l=last'>
+      {{i+1}}: {{item}}
+      <ng-container *ngIf='l'>
+        <hr>
+        <div>總共{{i+1}}筆</div>
+      </ng-container>
+    </li>
+  </ul>
+</div>
+```
+
+step5：使用差值呼叫函數
+
+```ts title="page1.component.ts"
+getName(idx: number): string {
+    if (idx < 0 || idx > this.member.length) {
+      return '索引超出範圍';
+    }
+    return this.member[idx];
+  }
+```
+
+```html
+<div>
+  您查詢的成員為:{{getName(2)}}
+</div>
+```
 
 ---
 
-!!! tip
+## MVC 之 Model
 
-    If you don't have prior experience with Python, we recommend reading
-    [Using Python's pip to Manage Your Projects' Dependencies], which is a
-    really good introduction on the mechanics of Python package management and
-    helps you troubleshoot if you run into errors.
+- 負責與後端資料溝通的模型
+- Ex.資料結構、存取資料的邏輯層
+- Angular 以 class 實作 Model
 
-  [Python package]: https://pypi.org/project/mkdocs-material/
-  [virtual environment]: https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment
-  [semantic versioning]: https://semver.org/
-  [upgrade to the next major version]: upgrade.md
-  [Markdown]: https://python-markdown.github.io/
-  [Pygments]: https://pygments.org/
-  [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
-  [Using Python's pip to Manage Your Projects' Dependencies]: https://realpython.com/what-is-pip/
+=== "加入 Model"
 
-### with docker
-
-The official [Docker image] is a great way to get up and running in a few
-minutes, as it comes with all dependencies pre-installed. Open up a terminal
-and pull the image with:
-
-=== "Latest"
-
-    ```
-    docker pull squidfunk/mkdocs-material
+    ``` sh
+    ng generate class [ModelName] 
     ```
 
-=== "9.x"
+=== "加入 Model(縮寫)"
 
-    ```
-    docker pull squidfunk/mkdocs-material:9
-    ```
-
-The `mkdocs` executable is provided as an entry point and `serve` is the
-default command. If you're not familiar with Docker don't worry, we have you
-covered in the following sections.
-
-The following plugins are bundled with the Docker image:
-
-- [mkdocs-minify-plugin]
-- [mkdocs-redirects]
-
-  [Docker image]: https://hub.docker.com/r/squidfunk/mkdocs-material/
-  [mkdocs-minify-plugin]: https://github.com/byrnereese/mkdocs-minify-plugin
-  [mkdocs-redirects]: https://github.com/datarobot/mkdocs-redirects
-
-??? question "How to add plugins to the Docker image?"
-
-    Material for MkDocs only bundles selected plugins in order to keep the size
-    of the official image small. If the plugin you want to use is not included,
-    you can add them easily:
-
-    === "Material for MkDocs"
-
-        Create a `Dockerfile` and extend the official image:
-
-        ``` Dockerfile title="Dockerfile"
-        FROM squidfunk/mkdocs-material
-        RUN pip install mkdocs-macros-plugin
-        RUN pip install mkdocs-glightbox
-        ```
-
-    === "Insiders"
-
-        Clone or fork the Insiders repository, and create a file called
-        `user-requirements.txt` in the root of the repository. Then, add the
-        plugins that should be installed to the file, e.g.:
-
-        ``` txt title="user-requirements.txt"
-        mkdocs-macros-plugin
-        mkdocs-glightbox
-        ```
-
-    Next, build the image with the following command:
-
-    ```
-    docker build -t squidfunk/mkdocs-material .
+    ``` sh
+    ng g cl [ModelName] 
     ```
 
-    The new image will have additional packages installed and can be used
-    exactly like the official image.
+---
 
-### with git
+## (實作3)使用MVC
 
-Material for MkDocs can be directly used from [GitHub] by cloning the
-repository into a subfolder of your project root which might be useful if you
-want to use the very latest version:
+---
 
-```
-git clone https://github.com/squidfunk/mkdocs-material.git
+step1：Model
+
+```sh
+ng g cl Picture --project mod02
 ```
 
-Next, install the theme and its dependencies with:
+```ts title="picture.ts"
+export class Picture {
+	constructor(
+        public PictureID: number,
+        public Url: string,
+        public Subject: string,
+		public Author:string){
 
-```
-pip install -e mkdocs-material
+        }
+}
+export const picture = new Picture(1,"<圖片網址>","教堂","Kat Kelley");
 ```
 
-  [GitHub]: https://github.com/squidfunk/mkdocs-material -->
+step2: MVC - VC (Component)
+
+```sh
+ng g c page2
+```
+
+```ts title="page2.component.ts"
+@Component({
+	selector:'page2',
+	templateUrl:'./page2.component.html',
+	styles: []
+})
+
+export class Page2Component implements OnInit {
+	public pic = picture
+	constructor(){}
+	ngOnInit():void {
+	
+	}
+}
+```
+
+```html title="page2.component.html"
+<div>
+    ID: {{ pic.PictureID }} -
+    Subject: {{ pic.Subject}} -
+    Author: {{ pic.Author}} 
+    <br/>
+    <img src="{{pic.Url}}" height="200" />
+</div>
+```
+
+step3：在 app.component 中加入 page2
+
+```html title="app.component.html"
+...以上省略...
+</div>
+<page2></page2>
+<page1></page1>
+```
+
+step3：物件陣列 / *ngFor / MVC
+
+```ts title="page2.component.ts"
+export class Page2Component {
+    // public pic = picture
+	public pictures:Picture[];
+		constructor(){
+			this.pictures=[
+                picture,
+				new Picture(2,"https://XXX", "圖片名稱", "作者"),
+				new Picture(3,"https://XXX", "圖片名稱", "作者"),
+				new Picture(4,"https://XXX", "圖片名稱", "作者"),
+            ]
+		}
+}
+```
+
+- 
+
+```html title="page2.component.html"
+<div *ngFor="let pic of pictures">
+	ID: {{ pic.PictureID }} -
+	Subject: {{ pic.Subject}} -
+	Author: {{ pic.Author}} <br/>
+	<img src="{{pic.Url}}" height="200" />
+</div>
+```

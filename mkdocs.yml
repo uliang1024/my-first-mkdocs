@@ -111,6 +111,8 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+  # Data tables
+  - tables
   #Plugins for MkDocs
   - neoteroi.timeline
 
