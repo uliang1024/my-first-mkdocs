@@ -119,3 +119,6 @@ markdown_extensions:
 extra_css:
     - assets/css/extra.css
     - assets/css/neoteroi-timeline.css
+
+extra_javascript:
+  - assets/js/script.js
