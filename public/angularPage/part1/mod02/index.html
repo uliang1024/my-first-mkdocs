@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -453,6 +458,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第二章 Module 與 MVC 設計模型
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -462,6 +478,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      常用模組
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component" class="md-nav__link">
+    <span class="md-ellipsis">
+      認識元件 (Component)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mvc" class="md-nav__link">
+    <span class="md-ellipsis">
+      甚麼是 MVC 架構
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      加入一個 component
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structural-directives" class="md-nav__link">
+    <span class="md-ellipsis">
+      結構型指令（STRUCTURAL DIRECTIVES）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作2) 使用結構型指令
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mvc-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      MVC 之 Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3mvc" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作3)使用MVC
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -854,6 +959,86 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      常用模組
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component" class="md-nav__link">
+    <span class="md-ellipsis">
+      認識元件 (Component)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mvc" class="md-nav__link">
+    <span class="md-ellipsis">
+      甚麼是 MVC 架構
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      加入一個 component
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structural-directives" class="md-nav__link">
+    <span class="md-ellipsis">
+      結構型指令（STRUCTURAL DIRECTIVES）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作2) 使用結構型指令
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mvc-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      MVC 之 Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3mvc" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作3)使用MVC
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -869,172 +1054,293 @@
 
   <h1>第二章 Module 與 MVC 設計模型</h1>
 
-<!-- # Getting started
-
-Material for MkDocs is a powerful documentation framework on top of [MkDocs],
-a static site generator for project documentation.[^1] If you're familiar with
-Python, you can install Material for MkDocs with [`pip`][pip], the Python
-package manager. If not, we recommend using [`docker`][docker].
-
-  [^1]:
-    In 2016, Material for MkDocs started out as a simple theme for MkDocs, but
-    over the course of several years, it's now much more than that – with the
-    many built-in plugins, settings, and countless customization abilities,
-    Material for MkDocs is now one of the simplest and most powerful frameworks
-    for creating documentation for your project.
-
-  [MkDocs]: https://www.mkdocs.org
-  [pip]: #with-pip
-  [docker]: #with-docker
-
-## Installation
-
-### with pip <small>recommended</small> { #with-pip data-toc-label="with pip" }
-
-Material for MkDocs is published as a [Python package] and can be installed with
-`pip`, ideally by using a [virtual environment]. Open up a terminal and install
-Material for MkDocs with:
-
-=== "Latest"
-
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
+<p>模組化的目的：將巨大的應用程式拆開成一個一個的模塊，每個模塊可能包含特定功能的函式庫或元件。</p>
+<p><strong>JavaScript模組</strong>(.js)：</p>
+<ul>
+<li><strong>export</strong>: 此程式可用於其他模組</li>
+<li><strong>import</strong>: 引入其他模組到此程式</li>
+<li><strong>Angular 框架</strong>採用</li>
+<li>Angular模組 使用 @ngModule 定義，metadata 供編譯使用</li>
+</ul>
+<div class="highlight"><span class="filename">app.module.ts</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NgModule</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">BrowserModule</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/platform-browser&#39;</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">AppRoutingModule</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./app-routing.module&#39;</span><span class="p">;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">AppComponent</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./app.component&#39;</span><span class="p">;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kd">@NgModule</span><span class="p">({</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nx">declarations</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nx">AppComponent</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nx">BrowserModule</span><span class="p">,</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nx">AppRoutingModule</span><span class="p">,</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="nx">providers</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="nx">bootstrap</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">AppComponent</span><span class="p">]</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">})</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">AppModule</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
 </code></pre></div>
-
-=== "9.x"
-
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material<span class="o">==</span><span class="s2">&quot;9.*&quot;</span><span class="w"> </span><span class="c1"># (1)!</span>
+<div class="result">
+<p><strong>declarations</strong>：模組中可宣告的物件，像是Component、Directive、Pipe，此模組所擁有的元件</p>
+<p><strong>imports</strong>：使用外部模組，引入到這個模組才可使用</p>
+<p><strong>providers</strong>：加入服務提供者，會以執行階段動態注射的方式載入</p>
+<p><strong>bootstrap</strong>：指定Angular 入口元件，Angular會建立這個元件</p>
+</div>
+<h2 id="_1">常用模組</h2>
+<table>
+<thead>
+<tr>
+<th>模組名稱</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BrowserModule</code></td>
+<td>@angular/platform-browser <br> 在瀏覽器執行應用程式時</td>
+</tr>
+<tr>
+<td><code>CommonModule</code></td>
+<td>使用 ngIf、ngFor</td>
+</tr>
+<tr>
+<td><code>FormsModule</code></td>
+<td>使用 ngModel及範本驅動表單時</td>
+</tr>
+<tr>
+<td><code>ReactiveFormsModule</code></td>
+<td>使用 響應式表單</td>
+</tr>
+<tr>
+<td><code>RouterModule</code></td>
+<td>使用 路由功能</td>
+</tr>
+<tr>
+<td><code>HttpClientModule</code></td>
+<td>與 遠端伺服器 連結時需要用到</td>
+</tr>
+</tbody>
+</table>
+<h2 id="component">認識元件 (Component)</h2>
+<ul>
+<li>是 應用程式 的檢視元素</li>
+<li>由 HTML、TypeScript、CSS 組合而成的</li>
+<li>每個應用程式會有個  AppComponent<ul>
+<li>是應用程式的根元件 以 <app-root> 載入到 Index.html</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><span class="filename">Index.html</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">app-root</span><span class="p">&gt;&lt;/</span><span class="nt">app-root</span><span class="p">&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </code></pre></div>
-
-    1.  Material for MkDocs uses [semantic versioning][^2], which is why it's a
-        good idea to limit upgrades to the current major version.
-
-        This will make sure that you don't accidentally [upgrade to the next
-        major version], which may include breaking changes that silently corrupt
-        your site. Additionally, you can use `pip freeze` to create a lockfile,
-        so builds are reproducible at all times:
-
-        <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip freeze &gt; requirements.txt
+<ul>
+<li>每個元件要放入 @NgModule 的 declarations</li>
+</ul>
+<h2 id="mvc">甚麼是 MVC 架構</h2>
+<p><img alt="Untitled" src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2Fd198e188-cb97-46f0-831e-8d2f3aef32e3%2FUntitled.png?table=block&amp;id=824e30f9-f30b-4781-9687-a08aeaf61cd8&amp;spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&amp;width=2000&amp;userId=179fac66-18cb-4514-8514-c86cecede625&amp;cache=v2" /></p>
+<blockquote>
+<p>圖片源自 <a href="https://tw.alphacamp.co/blog/mvc-model-view-controller">https://tw.alphacamp.co/blog/mvc-model-view-controller</a></p>
+<p>Model、View、Controller 的區分，是希望能把應用程式的內部運作歸納成不同的部門，讓每個部門各自負責不同的關注點。具體的行為是「把不同意義的程式碼放在不同的檔案裡」。</p>
+<ol>
+<li><strong>Model（模型）</strong>：模型代表應用程式的資料結構。它處理應用程式的資料邏輯，並對應於資料庫、檔案系統或其他資料來源。模型負責檢索、儲存和修改資料，同時也定義了資料的結構和規則。</li>
+<li><strong>View（視圖）</strong>：視圖是應用程式的使用者介面的表示。它負責將模型中的資料呈現給使用者，通常以圖形界面（GUI）或網頁的形式呈現。視圖通常是動態的，它會根據模型的狀態而更新，以反映最新的資訊。</li>
+<li><strong>Controller（控制器）</strong>：控制器是模型和視圖之間的中介。它接收來自使用者的輸入，然後根據這些輸入更新模型的狀態或調用適當的視圖來呈現資料。控制器處理應用程式的流程控制和業務邏輯，並根據應用程式的需求來操作模型和視圖。</li>
+</ol>
+</blockquote>
+<h2 id="component_1">加入一個 component</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">加入 component</label><label for="__tabbed_1_2">加入 component(縮寫)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span><span class="o">[</span>name<span class="o">]</span>
 </code></pre></div>
-
-        Now, the lockfile can be used for installation:
-
-        <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip install -r requirements.txt
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ng<span class="w"> </span>g<span class="w"> </span>c<span class="w"> </span><span class="o">[</span>name<span class="o">]</span>
 </code></pre></div>
-
-  [^2]:
-    Note that improvements of existing features are sometimes released as
-    patch releases, like for example improved rendering of content tabs, as
-    they're not considered to be new features.
-
-This will automatically install compatible versions of all dependencies:
-[MkDocs], [Markdown], [Pygments] and [Python Markdown Extensions]. Material for
-MkDocs always strives to support the latest versions, so there's no need to
-install those packages separately.
-
----
-
-:fontawesome-brands-youtube:{ style="color: #EE0F0F" }
-__[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
-15m – Learn how to create and host a documentation site using Material for
-MkDocs on GitHub Pages in a step-by-step guide.
-
-  [How to set up Material for MkDocs]: https://www.youtube.com/watch?v=Q-YA_dA8C20
-
----
-
-!!! tip
-
-    If you don't have prior experience with Python, we recommend reading
-    [Using Python's pip to Manage Your Projects' Dependencies], which is a
-    really good introduction on the mechanics of Python package management and
-    helps you troubleshoot if you run into errors.
-
-  [Python package]: https://pypi.org/project/mkdocs-material/
-  [virtual environment]: https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment
-  [semantic versioning]: https://semver.org/
-  [upgrade to the next major version]: upgrade.md
-  [Markdown]: https://python-markdown.github.io/
-  [Pygments]: https://pygments.org/
-  [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
-  [Using Python's pip to Manage Your Projects' Dependencies]: https://realpython.com/what-is-pip/
-
-### with docker
-
-The official [Docker image] is a great way to get up and running in a few
-minutes, as it comes with all dependencies pre-installed. Open up a terminal
-and pull the image with:
-
-=== "Latest"
-
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker pull squidfunk/mkdocs-material
+</div>
+</div>
+</div>
+<h2 id="structural-directives">結構型指令（STRUCTURAL DIRECTIVES）</h2>
+<p>Angular 使用結構化指令操作DOM。具有重塑DOM結構的能力，可能是新增、移除或是維護元素。</p>
+<ul>
+<li>使用 * (星號) 為字首<ul>
+<li>*ngFor：重複顯示每一個單項</li>
+<li>*ngIf：顯示項目，條件不符整個元素不存在</li>
+<li>*ngSwitch：類似 JavaScript 的 switch，只會有一個項目被顯示</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="2">(實作2) 使用結構型指令</h2>
+<p>step1：宣告一組陣列</p>
+<div class="highlight"><span class="filename">page1.component.ts</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">Page1Component</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nx">member</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Jenny&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Vivid&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Kity&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Linda&#39;</span><span class="p">];</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">}</span>
 </code></pre></div>
-
-=== "9.x"
-
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker pull squidfunk/mkdocs-material:9
+<p>step2：使用 *ngFor</p>
+<div class="highlight"><span class="filename">page1.component.html</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  <span class="p">&lt;</span><span class="nt">li</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#39;let item of member; let i = index&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    {{i}}:{{item}}
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 </code></pre></div>
-
-The `mkdocs` executable is provided as an entry point and `serve` is the
-default command. If you're not familiar with Docker don't worry, we have you
-covered in the following sections.
-
-The following plugins are bundled with the Docker image:
-
-- [mkdocs-minify-plugin]
-- [mkdocs-redirects]
-
-  [Docker image]: https://hub.docker.com/r/squidfunk/mkdocs-material/
-  [mkdocs-minify-plugin]: https://github.com/byrnereese/mkdocs-minify-plugin
-  [mkdocs-redirects]: https://github.com/datarobot/mkdocs-redirects
-
-??? question "How to add plugins to the Docker image?"
-
-    Material for MkDocs only bundles selected plugins in order to keep the size
-    of the official image small. If the plugin you want to use is not included,
-    you can add them easily:
-
-    === "Material for MkDocs"
-
-        Create a `Dockerfile` and extend the official image:
-
-        <div class="highlight"><span class="filename">Dockerfile</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">squidfunk/mkdocs-material</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-macros-plugin
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-glightbox
+<p>step3：使用 *ngIf</p>
+<div class="highlight"><span class="filename">page1.component.ts</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">Page1Component</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="c1">// member = [&#39;Jenny&#39;, &#39;Vivid&#39;, &#39;Kity&#39;, &#39;Linda&#39;];</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nx">member</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">}</span>
 </code></pre></div>
-
-    === "Insiders"
-
-        Clone or fork the Insiders repository, and create a file called
-        `user-requirements.txt` in the root of the repository. Then, add the
-        plugins that should be installed to the file, e.g.:
-
-        <div class="highlight"><span class="filename">user-requirements.txt</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>mkdocs-macros-plugin
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>mkdocs-glightbox
+<div class="highlight"><span class="filename">page1.component.html</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#39;member.length&gt;0;else noMember&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  會員清單:
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="p">&lt;</span><span class="nt">li</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#39;let item of member;let i =index;let l=last&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>      {{i+1}}: {{item}}
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="p">&lt;</span><span class="nt">ng-template</span> <span class="err">#</span><span class="na">noMember</span><span class="p">&gt;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>目前沒有會員<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">&lt;/</span><span class="nt">ng-template</span><span class="p">&gt;</span>
 </code></pre></div>
-
-    Next, build the image with the following command:
-
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker build -t squidfunk/mkdocs-material .
+<p>step4：*ngFor 加入 last 屬性的處理</p>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>*ngForOf 的屬性</p>
+<p><code>*ngFor=”let item of member; let i = index; let o=odd”</code></p>
+<ul>
+<li>index 屬性<ul>
+<li>提供以零為起始的索引數字</li>
+</ul>
+</li>
+<li>Boolean 類的屬性<ul>
+<li>first、last：若是首筆或尾筆為 true</li>
+<li>even、odd：奇數、偶數時為 true</li>
+</ul>
+</li>
+</ul>
+</details>
+<div class="highlight"><span class="filename">page1.component.ts</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">Page1Component</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nx">member</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Jenny&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Vivid&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Kity&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Linda&#39;</span><span class="p">];</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="c1">// member = [];</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="p">}</span>
 </code></pre></div>
-
-    The new image will have additional packages installed and can be used
-    exactly like the official image.
-
-### with git
-
-Material for MkDocs can be directly used from [GitHub] by cloning the
-repository into a subfolder of your project root which might be useful if you
-want to use the very latest version:
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>git clone https://github.com/squidfunk/mkdocs-material.git
+<div class="highlight"><span class="filename">page1.component.html</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#39;member.length&gt;0;&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  會員清單:
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="p">&lt;</span><span class="nt">li</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#39;let item of member;let i =index;let l=last&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>      {{i+1}}: {{item}}
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>      <span class="p">&lt;</span><span class="nt">ng-container</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#39;l&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>        <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>總共{{i+1}}筆<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>      <span class="p">&lt;/</span><span class="nt">ng-container</span><span class="p">&gt;</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div>
-
-Next, install the theme and its dependencies with:
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>pip install -e mkdocs-material
+<p>step5：使用差值呼叫函數</p>
+<div class="highlight"><span class="filename">page1.component.ts</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nx">getName</span><span class="p">(</span><span class="nx">idx</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">idx</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">idx</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">member</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;索引超出範圍&#39;</span><span class="p">;</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">member</span><span class="p">[</span><span class="nx">idx</span><span class="p">];</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">  </span><span class="p">}</span>
 </code></pre></div>
-
-  [GitHub]: https://github.com/squidfunk/mkdocs-material -->
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>  您查詢的成員為:{{getName(2)}}
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<h2 id="mvc-model">MVC 之 Model</h2>
+<ul>
+<li>負責與後端資料溝通的模型</li>
+<li>Ex.資料結構、存取資料的邏輯層</li>
+<li>Angular 以 class 實作 Model</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">加入 Model</label><label for="__tabbed_2_2">加入 Model(縮寫)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>ng<span class="w"> </span>generate<span class="w"> </span>class<span class="w"> </span><span class="o">[</span>ModelName<span class="o">]</span><span class="w"> </span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>ng<span class="w"> </span>g<span class="w"> </span>cl<span class="w"> </span><span class="o">[</span>ModelName<span class="o">]</span><span class="w"> </span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="3mvc">(實作3)使用MVC</h2>
+<hr />
+<p>step1：Model</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>ng<span class="w"> </span>g<span class="w"> </span>cl<span class="w"> </span>Picture<span class="w"> </span>--project<span class="w"> </span>mod02
+</code></pre></div>
+<div class="highlight"><span class="filename">picture.ts</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">Picture</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="kr">constructor</span><span class="p">(</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="nx">PictureID</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="nx">Url</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="nx">Subject</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="nx">Author</span><span class="o">:</span><span class="kt">string</span><span class="p">){</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="p">}</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">picture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Picture</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="s2">&quot;&lt;圖片網址&gt;&quot;</span><span class="p">,</span><span class="s2">&quot;教堂&quot;</span><span class="p">,</span><span class="s2">&quot;Kat Kelley&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>step2: MVC - VC (Component)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>ng<span class="w"> </span>g<span class="w"> </span>c<span class="w"> </span>page2
+</code></pre></div>
+<div class="highlight"><span class="filename">page2.component.ts</span><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kd">@Component</span><span class="p">({</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">    </span><span class="nx">selector</span><span class="o">:</span><span class="s1">&#39;page2&#39;</span><span class="p">,</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="nx">templateUrl</span><span class="o">:</span><span class="s1">&#39;./page2.component.html&#39;</span><span class="p">,</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">    </span><span class="nx">styles</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="p">})</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">Page2Component</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">OnInit</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nx">pic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">picture</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">    </span><span class="kr">constructor</span><span class="p">(){}</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">    </span><span class="nx">ngOnInit</span><span class="p">()</span><span class="o">:</span><span class="ow">void</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">page2.component.html</span><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>    ID: {{ pic.PictureID }} -
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    Subject: {{ pic.Subject}} -
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    Author: {{ pic.Author}} 
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>    <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;{{pic.Url}}&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;200&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>step3：在 app.component 中加入 page2</p>
+<div class="highlight"><span class="filename">app.component.html</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>...以上省略...
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="p">&lt;</span><span class="nt">page2</span><span class="p">&gt;&lt;/</span><span class="nt">page2</span><span class="p">&gt;</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="p">&lt;</span><span class="nt">page1</span><span class="p">&gt;&lt;/</span><span class="nt">page1</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>step3：物件陣列 / *ngFor / MVC</p>
+<div class="highlight"><span class="filename">page2.component.ts</span><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">Page2Component</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">    </span><span class="c1">// public pic = picture</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nx">pictures</span><span class="o">:</span><span class="kt">Picture</span><span class="p">[];</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">        </span><span class="kr">constructor</span><span class="p">(){</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="nx">pictures</span><span class="o">=</span><span class="p">[</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">                </span><span class="nx">picture</span><span class="p">,</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">                </span><span class="ow">new</span><span class="w"> </span><span class="nx">Picture</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="s2">&quot;https://XXX&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;圖片名稱&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;作者&quot;</span><span class="p">),</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">                </span><span class="ow">new</span><span class="w"> </span><span class="nx">Picture</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="s2">&quot;https://XXX&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;圖片名稱&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;作者&quot;</span><span class="p">),</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="w">                </span><span class="ow">new</span><span class="w"> </span><span class="nx">Picture</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span><span class="s2">&quot;https://XXX&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;圖片名稱&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;作者&quot;</span><span class="p">),</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">            </span><span class="p">]</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li></li>
+</ul>
+<div class="highlight"><span class="filename">page2.component.html</span><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&quot;let pic of pictures&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    ID: {{ pic.PictureID }} -
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    Subject: {{ pic.Subject}} -
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    Author: {{ pic.Author}} <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;{{pic.Url}}&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;200&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
 
 
 
