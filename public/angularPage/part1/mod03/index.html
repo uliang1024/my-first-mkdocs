@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#routing-app" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -474,6 +479,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第三章 初探 Angular Route & Navigation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -483,6 +499,77 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#routing-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      建置具 Routing 能力的 App
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      啟用 routing 功能
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Routes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#href-vs-routerlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      路徑指向 href vs routerLink
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      指定路由元件輸出的位置
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngfor" class="md-nav__link">
+    <span class="md-ellipsis">
+      搭配 *ngFor 產生選單 (推薦)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -854,6 +941,68 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#routing-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      建置具 Routing 能力的 App
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      啟用 routing 功能
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Routes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#href-vs-routerlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      路徑指向 href vs routerLink
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      指定路由元件輸出的位置
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngfor" class="md-nav__link">
+    <span class="md-ellipsis">
+      搭配 *ngFor 產生選單 (推薦)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -869,7 +1018,92 @@
 
   <h1>第三章 初探 Angular Route & Navigation</h1>
 
-
+<hr />
+<ul>
+<li>藉由地址列輸入 URL，將瀏覽器導向相對應的頁面</li>
+<li>透過超連結或是連結 導向新的頁面</li>
+<li>使用瀏覽器的後退及前進按鈕，導向歷史紀錄的前後頁</li>
+</ul>
+<hr />
+<h2 id="routing-app">建置具 Routing 能力的 App</h2>
+<hr />
+<p><strong>step 1</strong>： <a href="#step1">建置專案時，啟用 routing 功能</a></p>
+<p><strong>step 2</strong>： 建置專案所需的元件</p>
+<p><strong>step 3</strong>： <a href="#step3">設定 Route 的資訊</a></p>
+<p><strong>step 4</strong>： <a href="#step4">選單 導引頁面</a></p>
+<hr />
+<p><a name="step1"></a></p>
+<h2 id="routing">啟用 routing 功能</h2>
+<hr />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ng<span class="w"> </span>new<span class="w"> </span>RouteDemo<span class="w"> </span>--routing
+</code></pre></div>
+<ul>
+<li>—routing</li>
+<li>產生routing 相關元件</li>
+<li>若沒有指定，會跳出詢問句</li>
+<li>回答 y 一樣會產生 routing 相關元件</li>
+<li>回答 n 則不會產生<ul>
+<li>
+<p>在既有專案加入 routing 模組</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ng<span class="w"> </span>g<span class="w"> </span>module<span class="w"> </span>app-routing<span class="w"> </span>--module<span class="w"> </span>app<span class="w"> </span>--flat<span class="w"> </span>--project<span class="w"> </span>mod05
+</code></pre></div>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="step3"></a></p>
+<h2 id="routes">Routes</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">routes</span><span class="o">:</span><span class="w"> </span><span class="kt">Routes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p">{</span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;p1&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">Page1Component</span><span class="p">,</span><span class="w"> </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Page1&#39;</span><span class="p">,</span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;page1&#39;</span><span class="p">]},</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="p">{</span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;p2&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">Page2Component</span><span class="p">,</span><span class="w"> </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Page2&#39;</span><span class="p">,</span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;page2&#39;</span><span class="p">]},</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">];</span>
+</code></pre></div>
+<ul>
+<li>定義路由的配置，是一組Route的陣列</li>
+<li>Route 包含以下屬性：<ul>
+<li>path: 路徑</li>
+<li>component: 若符合路徑時要啟動的元件</li>
+<li>data: 開發人員可以自訂額外的資料，可以不傳遞</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><a name="step4"></a></p>
+<h2 id="href-vs-routerlink">路徑指向 href vs routerLink</h2>
+<hr />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;page1&quot;</span><span class="p">&gt;</span>Page1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">routerLink</span><span class="o">=</span><span class="s">&quot;page1&quot;</span><span class="p">&gt;</span>Page1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&quot;[&#39;../&#39;,&#39;</span><span class="na">products</span><span class="err">&#39;]&quot;</span><span class="p">&gt;</span>Products<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&quot;[&#39;/&#39;,&#39;</span><span class="na">customer</span><span class="err">&#39;,&#39;</span><span class="na">Company1</span><span class="err">&#39;]&quot;</span><span class="p">&gt;</span>Company1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&quot;[{</span><span class="na">outlets:</span><span class="err">{</span><span class="na">left:</span><span class="err">[&#39;[</span><span class="na">age1</span><span class="err">]&#39;]}}]&quot;</span><span class="p">&gt;</span>Page1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
+<ul>
+<li>href<ul>
+<li>傳統 HTML 轉頁用，用在路由也有效果</li>
+</ul>
+</li>
+<li>routerLink<ul>
+<li>Angular 路由專用的屬性</li>
+<li>設定路徑區段，例如：’../product’ or ‘/customer/Company1’</li>
+<li>可以指定輸出到 特定的 router-outlet</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="_1">指定路由元件輸出的位置</h2>
+<hr />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">router-outlet</span><span class="p">&gt;&lt;/</span><span class="nt">router-outlet</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<h2 id="ngfor">搭配 *ngFor 產生選單 (推薦)</h2>
+<hr />
+<div class="highlight"><span class="filename">app.component.html</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="p">&lt;</span><span class="nt">li</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&quot;let r of routes&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>      <span class="p">&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&quot;</span><span class="na">r</span><span class="err">.</span><span class="na">path</span><span class="err">&quot;</span><span class="p">&gt;</span>{{r.data?.[0]}}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a> <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div>
 
 
 

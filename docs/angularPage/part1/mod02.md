@@ -7,7 +7,7 @@
 - **Angular 框架**採用
   - Angular模組 使用 @ngModule 定義，metadata 供編譯使用
 
-``` typescript title="app.module.ts"
+``` typescript title="app.module.ts" hl_lines="6-16"
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -300,8 +300,6 @@ export class Page2Component {
 		}
 }
 ```
-
-- 
 
 ```html title="page2.component.html"
 <div *ngFor="let pic of pictures">
