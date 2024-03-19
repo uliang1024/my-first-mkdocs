@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -250,7 +255,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../cssFrameworks/" class="md-tabs__link">
+        <a href="../../../cssFrameworks/bootstrap/" class="md-tabs__link">
           
   
     
@@ -260,23 +265,6 @@
         </a>
       </li>
     
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../typeScriptPage/" class="md-tabs__link">
-        
-  
-    
-  
-  TypeScript
-
-      </a>
-    </li>
   
 
       
@@ -359,12 +347,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
       
         
       
@@ -492,7 +474,7 @@
         
   
   <span class="md-ellipsis">
-    第四章 HTML Binding 與 Event 的處理r
+    第四章 HTML Binding 與 Event 的處理
   </span>
   
 
@@ -558,6 +540,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第七章 表單驗證
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -567,6 +560,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      表單驗證的用意
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      有哪些輸入需要驗證
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html5" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTML5 提供的基本驗證
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angular 內建的驗證屬性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      ngModel 提供驗證檢查的相關功能
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmodel-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作) 使用 ngModel 的 Errors 屬性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1000-1999" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作) 檢查分機號碼必須介於 1000 - 1999 之間
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作) 多個欄位比對檢查
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -594,69 +676,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mod09/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    第九章 ASP.NET Core Web API 與 Entity Framework Core
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mod10/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    第十章
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mod11/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    第十一章
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -672,10 +691,6 @@
   
     
     
-      
-        
-          
-        
       
         
       
@@ -698,24 +713,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../../cssFrameworks/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     CSS框架
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
@@ -723,8 +730,6 @@
             CSS框架
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
             
               
                 
@@ -803,26 +808,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typeScriptPage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TypeScript
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../markdownPage/" class="md-nav__link">
         
   
@@ -854,6 +839,86 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      表單驗證的用意
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      有哪些輸入需要驗證
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html5" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTML5 提供的基本驗證
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angular 內建的驗證屬性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      ngModel 提供驗證檢查的相關功能
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmodel-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作) 使用 ngModel 的 Errors 屬性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1000-1999" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作) 檢查分機號碼必須介於 1000 - 1999 之間
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作) 多個欄位比對檢查
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -869,7 +934,313 @@
 
   <h1>第七章 表單驗證</h1>
 
-
+<hr />
+<h2 id="_1">表單驗證的用意</h2>
+<hr />
+<ul>
+<li>確認使用者輸入是否正確</li>
+<li>降低因輸入錯誤而產生多餘的網路往返</li>
+<li>降低伺服器不必要的負擔</li>
+</ul>
+<hr />
+<h2 id="_2">有哪些輸入需要驗證</h2>
+<hr />
+<ul>
+<li><strong>必要欄位</strong><ul>
+<li>姓名、身分證字號、統一編號</li>
+</ul>
+</li>
+<li><strong>輸入值必須在特定範圍</strong><ul>
+<li>年齡限制、租借日期、生日</li>
+</ul>
+</li>
+<li><strong>輸入值必須符合特定格式</strong><ul>
+<li>電話號碼、email</li>
+</ul>
+</li>
+<li><strong>長度限制</strong><ul>
+<li>姓名的長度、產品名稱的長度 …</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="html5">HTML5 提供的基本驗證</h2>
+<hr />
+<ul>
+<li>required</li>
+<li>minlength、maxlength</li>
+<li>pattern</li>
+<li>email</li>
+<li>min、max</li>
+</ul>
+<hr />
+<h2 id="angular">Angular 內建的驗證屬性</h2>
+<hr />
+<ul>
+<li>required</li>
+<li>minlength、maxlength</li>
+<li>pattern</li>
+<li>email</li>
+</ul>
+<hr />
+<h2 id="ngmodel">ngModel 提供驗證檢查的相關功能</h2>
+<hr />
+<ul>
+<li><strong>errors</strong>：驗證錯誤的訊息<ul>
+<li><strong>required</strong>，檢查若此<strong>欄位是空白</strong>，則傳回 true</li>
+<li><strong>minlength</strong>、<strong>maxlength</strong>，檢查此欄位最短及最長的長度，<strong>不符合</strong>則傳回 true</li>
+<li><strong>pattern</strong>，使用 RegEx 驗算文字是否符合規則，<strong>不符合</strong>則傳回 true</li>
+<li><strong>email</strong>，欄位必須符合 email 規則，若<strong>不符合</strong>則傳回 true</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="ngmodel-errors">(實作) 使用 ngModel 的 Errors 屬性</h2>
+<hr />
+<ul>
+<li>匯入 FormsModule</li>
+<li>app.module.ts</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>import { FormsModule } from &#39;@angular/forms&#39;;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>@NgModule({
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    ...
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  imports: [
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    BrowserModule,FormsModule
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  ],
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  ...
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>})
+</code></pre></div>
+<ul>
+<li>初始化文件</li>
+<li>app.component.ts</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>rentRoom = { name: &#39;&#39;, number: &#39;&#39;, extNo: &#39;&#39;, startDate: &#39;&#39;, endDate: &#39;&#39; };
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>capacity = [&#39;5人&#39;, &#39;10人&#39;, &#39;20人&#39;, &#39;30人&#39;, &#39;40人&#39;];
+</code></pre></div>
+<ul>
+<li>初始畫面</li>
+<li>app.component.html</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;margin: 20px&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>會議室預約單<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  <span class="p">&lt;</span><span class="nt">form</span> <span class="err">#</span><span class="na">f</span><span class="o">=</span><span class="s">&#39;ngForm&#39;</span> <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)=&#39;</span><span class="na">f</span><span class="err">.</span><span class="na">form</span><span class="err">.</span><span class="na">valid</span><span class="err">&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>租借人姓名<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">required</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span> 
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>      <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#39;</span><span class="na">rentRoom</span><span class="err">.</span><span class="na">name</span><span class="err">&#39;</span> <span class="err">#</span><span class="na">name</span><span class="o">=</span><span class="s">&#39;ngModel&#39;</span> <span class="na">minlength</span><span class="o">=</span><span class="s">&quot;4&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;請輸入租借者的姓名&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;name.invalid &amp;&amp; (name.dirty || name.touched)&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;alert alert-danger&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;name.errors?.[&#39;required&#39;]&quot;</span><span class="p">&gt;</span>必須輸入租借人!!<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;name.errors?.[&#39;minlength&#39;]&quot;</span><span class="p">&gt;</span>名字長度必須大於4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span>參與人數<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>      <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">required</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;number&quot;</span> 
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>      <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#39;</span><span class="na">rentRoom</span><span class="err">.</span><span class="na">number</span><span class="err">&#39;</span> <span class="err">#</span><span class="na">number</span><span class="o">=</span><span class="s">&#39;ngModel&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>請選擇參與人數<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        <span class="p">&lt;</span><span class="nt">option</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&quot;let cap of capacity&quot;</span> <span class="err">[</span><span class="na">value</span><span class="err">]=&#39;</span><span class="na">cap</span><span class="err">&#39;</span><span class="p">&gt;</span> {{cap}} <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>      <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;number.invalid &amp;&amp; (number.dirty || number.touched)&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;alert alert-danger&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;number.errors?.[&#39;required&#39;]&quot;</span><span class="p">&gt;</span>請選擇參與人數!!<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;size&quot;</span><span class="p">&gt;</span>分機號碼<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;租借者的辦公室分機號碼&quot;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#39;</span><span class="na">rentRoom</span><span class="err">.</span><span class="na">extNo</span><span class="err">&#39;</span> 
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>      <span class="err">#</span><span class="na">extNo</span><span class="o">=</span><span class="s">&#39;ngModel&#39;</span> <span class="na">required</span> <span class="na">CheckExtNo</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;extNo&quot;</span> <span class="na">pattern</span><span class="o">=</span><span class="s">&quot;[0-9]{4}&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;4個數字&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;extNo.invalid &amp;&amp; (extNo.dirty || extNo.touched)&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;alert alert-danger&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;extNo.errors?.[&#39;required&#39;]&quot;</span><span class="p">&gt;</span>分析號碼必須填寫<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;extNo.errors?.[&#39;pattern&#39;]&quot;</span><span class="p">&gt;</span>分機號碼必須是四個數字<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;extNo.errors?.[&#39;CheckExtNo&#39;]&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>          {{ extNo.errors?.[&#39;CheckExtNo&#39;].requiredValue}}
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span> <span class="na">ngModelGroup</span><span class="o">=</span><span class="s">&#39;rentDate&#39;</span> <span class="err">#</span><span class="na">rentDate</span><span class="o">=</span><span class="s">&#39;ngModelGroup&#39;</span> 
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>    <span class="err">[</span><span class="na">CheckEndDate</span><span class="err">]=&#39;[&quot;</span><span class="na">startDate</span><span class="err">&quot;,</span> <span class="err">&quot;</span><span class="na">endDate</span><span class="err">&quot;]&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;size&quot;</span><span class="p">&gt;</span>租借期間<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;date&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;起始時間&quot;</span> <span class="na">required</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;startDate&quot;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#39;</span><span class="na">rentRoom</span><span class="err">.</span><span class="na">startDate</span><span class="err">&#39;</span> <span class="err">#</span><span class="na">startDate</span><span class="o">=</span><span class="s">&#39;ngModel&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;date&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;退還時間&quot;</span> <span class="na">required</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;endDate&quot;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#39;</span><span class="na">rentRoom</span><span class="err">.</span><span class="na">endDate</span><span class="err">&#39;</span> <span class="err">#</span><span class="na">endDate</span><span class="o">=</span><span class="s">&#39;ngModel&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;rentDate.invalid &amp;&amp; (rentDate.dirty || rentDate.touched)&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;alert alert-danger&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;startDate.errors?.[&#39;required&#39;] || endDate.errors?.[&#39;required&#39;]&quot;</span><span class="p">&gt;</span>租借期間必須填寫<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;rentDate.errors?.[&#39;CheckEndDate&#39;]&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a>          {{ rentDate.errors?.[&#39;CheckEndDate&#39;].requiredValue }}
+<a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a>      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a>      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#39;</span><span class="na">f</span><span class="err">.</span><span class="na">invalid</span><span class="err">&#39;</span>
+<a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a>      <span class="err">[</span><span class="na">ngClass</span><span class="err">]=&quot;{&#39;</span><span class="na">btn</span><span class="err">&#39;</span><span class="na">:true</span><span class="err">,</span> <span class="err">&#39;</span><span class="na">btn-success</span><span class="err">&#39;</span><span class="na">:f</span><span class="err">.</span><span class="na">valid</span><span class="err">,</span> <span class="err">&#39;</span><span class="na">btn-warning</span><span class="err">&#39;</span><span class="na">:f</span><span class="err">.</span><span class="na">invalid</span><span class="err">}&quot;</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a>
+<a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a>      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Form value:{{f.value|json}}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a>      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Form status:{{f.status|json}}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a>      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>rentRoom:{{rentRoom|json}}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-2-56" name="__codelineno-2-56" href="#__codelineno-2-56"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-57" name="__codelineno-2-57" href="#__codelineno-2-57"></a>  <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<a id="__codelineno-2-58" name="__codelineno-2-58" href="#__codelineno-2-58"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><img alt="Untitled" src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2F063bb164-3e06-467b-93c7-4ca03f9d0710%2FUntitled.png?table=block&amp;id=fbeaaac5-573b-4032-ae0c-a7bd08a005cd&amp;spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&amp;width=2000&amp;userId=179fac66-18cb-4514-8514-c86cecede625&amp;cache=v2" /></p>
+<hr />
+<h2 id="1000-1999">(實作) 檢查分機號碼必須介於 1000 - 1999 之間</h2>
+<hr />
+<p>自訂驗證項的指令</p>
+<ul>
+<li>NG_VALIDATORS 的提供者<ul>
+<li>自訂驗證程序需要註冊此提供者</li>
+<li>multi 必須設定為true</li>
+<li>
+<p>在@Directive 指定 providers 相關資訊</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>@Directive({
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  selector: &#39;[CheckExtNo]&#39;,
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  providers: [{
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    provide: NG_VALIDATORS,
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    useExisting: CheckExtNoDirective,
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    multi: true
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  }]
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>})
+</code></pre></div>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>產生一個 Directive</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">ng</span> <span class="n">g</span> <span class="n">d</span> <span class="n">shared</span><span class="p">\</span><span class="n">checkExtNo</span> <span class="p">-</span><span class="n">-project</span> <span class="n">mod07</span>
+</code></pre></div>
+<ul>
+<li>指定指令的提供者</li>
+<li>check-ext-no.directive.ts</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>@Directive({
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  selector: &#39;[CheckExtNo]&#39;,
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  providers: [{
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    provide: NG_VALIDATORS,
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    useExisting: CheckExtNoDirective,
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    multi: true
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  }]
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>})
+</code></pre></div>
+<ul>
+<li>實作 Validator 介面</li>
+<li>check-ext-no.directive.ts</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>export class CheckExtNoDirective implements Validator{
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  constructor() { }
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>  validate(control: AbstractControl): ValidationErrors | null {
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    let extNo: number = parseInt(control.value);
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    let result = null;
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    if (extNo &lt; 1000 || extNo &gt; 1999) {
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>      result = {
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>        &#39;CheckExtNo&#39;: {
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>          actualValue: extNo,
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>          requiredValue:&#39;分機號碼必須介於 1000-1999 之間&#39;
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>        }
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>      }
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>      return result;
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>    }
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>    return null;
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>  }
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>}
+</code></pre></div>
+<ul>
+<li>套用到 HTML</li>
+<li>app.component.html</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;租借者的辦公室分機號碼&quot;</span> 
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>      <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#39;</span><span class="na">rentRoom</span><span class="err">.</span><span class="na">extNo</span><span class="err">&#39;</span> <span class="err">#</span><span class="na">extNo</span><span class="o">=</span><span class="s">&#39;ngModel&#39;</span> <span class="na">required</span> <span class="na">CheckExtNo</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;extNo&quot;</span> 
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>      <span class="na">pattern</span><span class="o">=</span><span class="s">&quot;[0-9]{4}&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;4個數字&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;extNo.invalid &amp;&amp; (extNo.dirty || extNo.touched)&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;alert alert-danger&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;extNo.errors?.[&#39;required&#39;]&quot;</span><span class="p">&gt;</span>分析號碼必須填寫<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;extNo.errors?.[&#39;pattern&#39;]&quot;</span><span class="p">&gt;</span>分機號碼必須是四個數字<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;extNo.errors?.[&#39;CheckExtNo&#39;]&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>          {{ extNo.errors?.[&#39;CheckExtNo&#39;].actualValue}}
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<h2 id="_3">(實作) 多個欄位比對檢查</h2>
+<hr />
+<ul>
+<li>產生一個 Directive</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">ng</span> <span class="n">g</span> <span class="n">d</span> <span class="n">shared</span><span class="p">\</span><span class="n">checkEndDate</span> <span class="p">-</span><span class="n">-project</span> <span class="n">mod07</span>
+</code></pre></div>
+<ul>
+<li>指定指令的提供者</li>
+<li>
+<p>check-end-date.directive.ts</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>@Directive({
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  selector: &#39;[CheckEndDate]&#39;,
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  providers: [{
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    provide: NG_VALIDATORS,
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    useExisting: CheckEndDateDirective,
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    multi: true
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>  }]
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>})
+</code></pre></div>
+</li>
+<li>
+<p>實作 Validator</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>export class CheckEndDateDirective {
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>  @Input(&#39;CheckEndDate&#39;) mustGT: string[] = [];
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  constructor() { }
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>  validate(control: AbstractControl): ValidationErrors | null {
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    let fg: FormGroup = &lt;FormGroup&gt;control;
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>    let startCtlName: string = this.mustGT[0], endCtlName: string = this.mustGT[1];
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>    const startCtl = fg.controls[startCtlName];
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    const endCtl = fg.controls[endCtlName];
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    if (!startCtl || !endCtl) {
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>      return null;
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>    }
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>    let startDate = Date.parse(startCtl.value);
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>    let endDate = Date.parse(endCtl.value);
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>    let result = null;
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>    if (startDate &gt;= endDate) {
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>      result = {
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>        &quot;CheckEndDate&quot;: {
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>          actualValue: `起始日期: ${startDate}, 歸還日期: ${endDate}`,
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>          requiredValue: &#39;歸還日期必須大於起始日期&#39;
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>        }
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>      }
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>    }
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>    return result;
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>  }
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>
+<a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>}
+</code></pre></div>
+</li>
+<li>
+<p>修改 ngModelGroup 加入 CheckEndDate 並傳入要比較的兩個欄位</p>
+</li>
+<li>
+<p>app.component.html</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span> <span class="na">ngModelGroup</span><span class="o">=</span><span class="s">&#39;rentDate&#39;</span> <span class="err">#</span><span class="na">rentDate</span><span class="o">=</span><span class="s">&#39;ngModelGroup&#39;</span> 
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="err">[</span><span class="na">CheckEndDate</span><span class="err">]=&#39;[&quot;</span><span class="na">startDate</span><span class="err">&quot;,</span> <span class="err">&quot;</span><span class="na">endDate</span><span class="err">&quot;]&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;size&quot;</span><span class="p">&gt;</span>租借期間<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;date&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;起始時間&quot;</span> <span class="na">required</span> 
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>          <span class="na">name</span><span class="o">=</span><span class="s">&quot;startDate&quot;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#39;</span><span class="na">rentRoom</span><span class="err">.</span><span class="na">startDate</span><span class="err">&#39;</span> <span class="err">#</span><span class="na">startDate</span><span class="o">=</span><span class="s">&#39;ngModel&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;date&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;退還時間&quot;</span> <span class="na">required</span> 
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>          <span class="na">name</span><span class="o">=</span><span class="s">&quot;endDate&quot;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#39;</span><span class="na">rentRoom</span><span class="err">.</span><span class="na">endDate</span><span class="err">&#39;</span> <span class="err">#</span><span class="na">endDate</span><span class="o">=</span><span class="s">&#39;ngModel&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;rentDate.invalid &amp;&amp; (rentDate.dirty || rentDate.touched)&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;alert alert-danger&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;startDate.errors?.[&#39;required&#39;] || endDate.errors?.[&#39;required&#39;]&quot;</span><span class="p">&gt;</span>租借期間必須填寫<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;rentDate.errors?.[&#39;CheckEndDate&#39;]&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>          {{ rentDate.errors?.[&#39;CheckEndDate&#39;].requiredValue }}
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+</li>
+</ul>
 
 
 

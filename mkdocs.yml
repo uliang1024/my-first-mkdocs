@@ -7,20 +7,15 @@ nav:
       - "第一章 前端網頁應用的利器Angular": angularPage/part1/mod01.md
       - "第二章 Module 與 MVC 設計模型": angularPage/part1/mod02.md
       - "第三章 初探 Angular Route & Navigation": angularPage/part1/mod03.md
-      - "第四章 HTML Binding 與 Event 的處理r": angularPage/part1/mod04.md
+      - "第四章 HTML Binding 與 Event 的處理": angularPage/part1/mod04.md
       - "第五章 關於 UI 的那些是 —元件、指令、Pipe": angularPage/part1/mod05.md
       - "第六章 表單 (Form)": angularPage/part1/mod06.md
       - "第七章 表單驗證": angularPage/part1/mod07.md
       - "第八章 Service (DI: 依存注入) 與 HttpClient": angularPage/part1/mod08.md
-      - "第九章 ASP.NET Core Web API 與 Entity Framework Core": angularPage/part1/mod09.md
-      - "第十章": angularPage/part1/mod10.md
-      - "第十一章": angularPage/part1/mod11.md
   - CSS框架: 
-      - "CSS框架": cssFrameworks/index.md
       - "Bootstrap": cssFrameworks/bootstrap.md
       - "Material UI": cssFrameworks/materialUI.md
       - "Tailwind CSS": cssFrameworks/tailwindCss.md
-  - TypeScript: typeScriptPage/index.md
   - markdown語法: markdownPage/index.md
 
 theme:
@@ -105,7 +100,11 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   # 內容選項卡
   - pymdownx.tabbed:
       alternate_style: true

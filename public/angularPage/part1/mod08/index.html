@@ -12,7 +12,7 @@
         <link rel="prev" href="../mod07/">
       
       
-        <link rel="next" href="../mod09/">
+        <link rel="next" href="../../../cssFrameworks/bootstrap/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -74,6 +74,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#service" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -250,7 +255,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../cssFrameworks/" class="md-tabs__link">
+        <a href="../../../cssFrameworks/bootstrap/" class="md-tabs__link">
           
   
     
@@ -260,23 +265,6 @@
         </a>
       </li>
     
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../typeScriptPage/" class="md-tabs__link">
-        
-  
-    
-  
-  TypeScript
-
-      </a>
-    </li>
   
 
       
@@ -359,12 +347,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
       
         
       
@@ -492,7 +474,7 @@
         
   
   <span class="md-ellipsis">
-    第四章 HTML Binding 與 Event 的處理r
+    第四章 HTML Binding 與 Event 的處理
   </span>
   
 
@@ -579,6 +561,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第八章 Service (DI: 依存注入) 與 HttpClient
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -589,69 +582,113 @@
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mod09/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    第九章 ASP.NET Core Web API 與 Entity Framework Core
-  </span>
-  
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../mod10/" class="md-nav__link">
-        
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service 的用途
+    </span>
+  </a>
   
-  <span class="md-ellipsis">
-    第十章
-  </span>
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      產生 Service
+    </span>
+  </a>
   
-
-      </a>
-    </li>
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service 註冊在…
+    </span>
+  </a>
   
-
-              
-            
-              
-                
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作) 建立 與 使用 Service
+    </span>
+  </a>
   
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#httpclient-webapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作) 使用 HttpClient 連接 WebAPI
+    </span>
+  </a>
   
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#httpclient" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTPClient
+    </span>
+  </a>
   
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#httpclient_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用HttpClient
+    </span>
+  </a>
   
-    <li class="md-nav__item">
-      <a href="../mod11/" class="md-nav__link">
-        
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#httpclient_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      HttpClient 的方法
+    </span>
+  </a>
   
-  <span class="md-ellipsis">
-    第十一章
-  </span>
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    <span class="md-ellipsis">
+      options
+    </span>
+  </a>
   
-
-      </a>
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observable
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -674,10 +711,6 @@
     
       
         
-          
-        
-      
-        
       
         
       
@@ -698,24 +731,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../../cssFrameworks/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     CSS框架
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
@@ -723,8 +748,6 @@
             CSS框架
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
             
               
                 
@@ -803,26 +826,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typeScriptPage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TypeScript
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../markdownPage/" class="md-nav__link">
         
   
@@ -854,6 +857,104 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service 的用途
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      產生 Service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service 註冊在…
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作) 建立 與 使用 Service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#httpclient-webapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      (實作) 使用 HttpClient 連接 WebAPI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#httpclient" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTPClient
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#httpclient_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用HttpClient
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#httpclient_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      HttpClient 的方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    <span class="md-ellipsis">
+      options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observable
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -869,7 +970,288 @@
 
   <h1>第八章 Service (DI: 依存注入) 與 HttpClient</h1>
 
-
+<hr />
+<h2 id="service">Service 的用途</h2>
+<hr />
+<ul>
+<li>Angular 核心元件</li>
+<li>專門處理某件事</li>
+<li>Component 負責處理畫面、資料綁定</li>
+<li>Service 負責取得資料、邏輯處理</li>
+<li>模組化、增加重用性</li>
+<li>Component 使用 Dependency Injection (依存注入) Service</li>
+<li>通常 Component 會共用一個 Service</li>
+<li>Service 的裝飾詞<ul>
+<li>@Injectable</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="service_1">產生 Service</h2>
+<hr />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ng</span> <span class="n">generate</span> <span class="n">service</span> <span class="no">[service名稱]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">或</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">ng</span> <span class="n">g</span> <span class="n">s</span> <span class="no">[service名稱]</span>
+</code></pre></div>
+<hr />
+<h2 id="service_2">Service 註冊在…</h2>
+<hr />
+<ul>
+<li>
+<p>@injectable 等級</p>
+<ul>
+<li>在 service</li>
+<li>‘root’ 範圍在整個應用成立</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>@Injectable({
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  providedIn: &#39;root&#39;
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>})
+</code></pre></div>
+</li>
+<li>
+<p>@ngModule 等級</p>
+<ul>
+<li>在 app.module</li>
+<li>範圍在目前這個 Module</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>@NgModule({
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    ...省略...
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  providers: [Service1],
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>})
+</code></pre></div>
+</li>
+<li>
+<p>@component 等級</p>
+<ul>
+<li>在 .component.ts</li>
+<li>範圍在目前這個 Component</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>@Component({
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    ...省略...
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  providers: [Service1],
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>})
+</code></pre></div>
+</li>
+</ul>
+<hr />
+<h2 id="service_3">(實作) 建立 與 使用 Service</h2>
+<hr />
+<ul>
+<li>新增三個 Component</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">ng</span> <span class="n">g</span> <span class="n">part1</span> <span class="p">-</span><span class="n">-project</span> <span class="n">mod08</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">ng</span> <span class="n">g</span> <span class="n">part1</span><span class="p">\</span><span class="n">page1</span> <span class="n">-t</span> <span class="p">-</span><span class="n">-project</span> <span class="n">mod08</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">ng</span> <span class="n">g</span> <span class="n">part1</span><span class="p">\</span><span class="n">page2</span> <span class="n">-t</span> <span class="p">-</span><span class="n">-project</span> <span class="n">mod08</span>
+</code></pre></div>
+<ul>
+<li>使用 ng generate 建立一個service類別</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">ng</span> <span class="n">g</span> <span class="n">c</span> <span class="n">part1</span><span class="p">\</span><span class="n">service1</span> <span class="p">-</span><span class="n">-project</span> <span class="n">mod08</span>
+</code></pre></div>
+<ul>
+<li>實作 Service</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>//service1.ts
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>import { Injectable } from &#39;@angular/core&#39;;
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>@Injectable({
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>  providedIn: &#39;root&#39;
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>})
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>export class Service1Service {
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>  public a: string;
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>  constructor() {
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    this.a = &quot;&quot;;
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>   }
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>}
+</code></pre></div>
+<ul>
+<li>在 page1 使用 Service1</li>
+<li>建構函式的參數傳入 service 的實體</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>//page1.component.ts
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>@Component({
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  selector: &#39;app-page1&#39;,
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>  template: `
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    &lt;p&gt;
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>      page1 works!
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    &lt;/p&gt;
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    &lt;h1&gt; {{ s1.a }} &lt;/h1&gt;
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    &lt;button (click)=&quot;Display()&quot;&gt;Display()&lt;/button&gt;
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>  `,
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>  styles: [
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>  ],
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>  providers: [Service1Service]
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>})
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>export class Page1Component {
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>  constructor(public s1: Service1Service) {
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>    s1.a = &quot;data1&quot;;
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>  }
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>  ngOnInit(): void { }
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>  Display() {
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>    console.log(&quot;form page1: &quot; + this.s1.a);
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>  }
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>}
+</code></pre></div>
+<ul>
+<li>在 Page2 使用 Service1</li>
+<li>建構函式的參數傳入 service 的實體</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>@Component({
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  selector: &#39;app-page2&#39;,
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  template: `
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    &lt;p&gt;
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>      page1 works!
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    &lt;/p&gt;
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    &lt;h1&gt; {{ s1.a }} &lt;/h1&gt;
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    &lt;button (click)=&quot;Display()&quot;&gt;Display()&lt;/button&gt;
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>  `,
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>  styles: [
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>  ],
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>  providers: [Service1Service]
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>})
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>export class Page2Component {
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>  constructor(public s1: Service1Service) {
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>    s1.a = &quot;data2&quot;;
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>  }
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>  ngOnInit(): void { }
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>  Display() {
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>    console.log(&quot;form page2: &quot; + this.s1.a);
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>  }
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cm">&lt;!-- part1.component.ts --&gt;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="p">&lt;</span><span class="nt">app-page1</span><span class="p">&gt;&lt;/</span><span class="nt">app-page1</span><span class="p">&gt;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">&lt;</span><span class="nt">app-page2</span><span class="p">&gt;&lt;/</span><span class="nt">app-page2</span><span class="p">&gt;</span>
+</code></pre></div>
+<ul>
+<li>執行 Run</li>
+</ul>
+<p><img alt="Untitled" src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2Fef07ba06-9af9-4d83-8e78-8ed833990289%2FUntitled.png?table=block&amp;id=9570a689-5f1a-403a-9cc2-ae70c868a5bd&amp;spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&amp;width=2000&amp;userId=179fac66-18cb-4514-8514-c86cecede625&amp;cache=v2" /></p>
+<hr />
+<ul>
+<li>改成 Component Provider</li>
+<li>Page1 &amp; Page2 @Component 設定 Provider</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>// page1.component.ts &amp; page2.component.ts
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>@Component({
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  ... 省略 ...
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  providers: [Service1Service]
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>})
+</code></pre></div>
+<hr />
+<h2 id="httpclient-webapi">(實作) 使用 HttpClient 連接 WebAPI</h2>
+<hr />
+<h2 id="httpclient">HTTPClient</h2>
+<hr />
+<ul>
+<li>以 HTTP 協定與後端服務進行通訊</li>
+<li>要先匯入 @angular/common/http 中的 HttpClientModule</li>
+<li>以服務注入 (DI) 的方式帶入HTTPClient</li>
+<li>get()、post()、put()、delete()</li>
+</ul>
+<hr />
+<h2 id="httpclient_1">使用HttpClient</h2>
+<hr />
+<ul>
+<li>appModule 匯入 HttpClientModule</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>import { HttpClientModule } from &#39;@angular/common/http&#39;;
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>@NgModule({
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    ...略...
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>  imports: [
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    BrowserModule,
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    AppRoutingModule,
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    HttpClientModule,
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>  ],
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>  ...略...
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>})
+</code></pre></div>
+<ul>
+<li>在要使用的類別之建構函式引入 HttpClient</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>constructor(private http: HttpClient) { }
+</code></pre></div>
+<hr />
+<h2 id="httpclient_2">HttpClient 的方法</h2>
+<hr />
+<p>get(url: string, options)</p>
+<p>post(url: string, body: any, options)</p>
+<p>put(url: string, body: any, options)</p>
+<p>delete(url: string, options)</p>
+<ul>
+<li>url：目的端網址</li>
+<li>options：最常用 observe 與 responseType</li>
+<li>body：要放在 HTTP Body 的資料</li>
+<li>回傳 Observable 或是 Observable<T></li>
+</ul>
+<hr />
+<h2 id="options">options</h2>
+<hr />
+<ul>
+<li>HTTP 選項</li>
+<li>
+<p>observe 指定要傳回的內容</p>
+<ul>
+<li>body | events | response</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>let options = { observe: &#39;body&#39; as &#39;body&#39; };
+</code></pre></div>
+</li>
+<li>
+<p>responseType 指定傳回的資料格式</p>
+<ul>
+<li>arraybuffer | blob | json | text</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>let options = { responseType: &#39;json&#39; as &#39;json&#39; };
+</code></pre></div>
+</li>
+<li>
+<p>headers 指定 HTTP 的標頭資訊</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>let options = { headers: new HttpHeaders({&#39;Content-Type&#39;: &#39;text/json&#39;}) };
+</code></pre></div>
+</li>
+</ul>
+<hr />
+<h2 id="observable">Observable</h2>
+<hr />
+<ul>
+<li>可觀察物件傳遞 HttpClient 的回傳值<ul>
+<li>通常用於事件處理及非同步設計…</li>
+</ul>
+</li>
+<li>使用 subscribe() 方法並傳入一個 observer (觀察者物件)</li>
+<li>observer 物件定義回呼函式<ul>
+<li>next: 必要，當處理的值送達時執行，可執行 0-n 次</li>
+<li>error: 可省略，處理錯誤的程序</li>
+<li>
+<p>complete: 可省略，處理執行完畢時的通知</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>.subscribe({
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>    next: (result) =&gt; console.log(result),
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>    error: (err) =&gt; console.log(err),
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    complete: () =&gt; console.info(&#39;done&#39;)
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>})
+</code></pre></div>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>預備檔案：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>ng g c part2 --project mod08
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>ng g s part2\connToWebAPI --project mod08
+</code></pre></div>
+<hr />
+<hr />
 
 
 

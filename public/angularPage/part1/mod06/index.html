@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -250,7 +255,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../cssFrameworks/" class="md-tabs__link">
+        <a href="../../../cssFrameworks/bootstrap/" class="md-tabs__link">
           
   
     
@@ -260,23 +265,6 @@
         </a>
       </li>
     
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../typeScriptPage/" class="md-tabs__link">
-        
-  
-    
-  
-  TypeScript
-
-      </a>
-    </li>
   
 
       
@@ -359,12 +347,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
       
         
       
@@ -492,7 +474,7 @@
         
   
   <span class="md-ellipsis">
-    第四章 HTML Binding 與 Event 的處理r
+    第四章 HTML Binding 與 Event 的處理
   </span>
   
 
@@ -537,6 +519,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第六章 表單 (Form)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -546,6 +539,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      兩種表單的差異
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      表單設計的選擇
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      共同的基礎組件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reactive-form-directive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reactive Form 的相關 Directive
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reactivate-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      以 Reactivate Forms 製作簡單的表單
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-driven" class="md-nav__link">
+    <span class="md-ellipsis">
+      以Template-Driven 製作表單
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#novalidate-ngnativevalidate" class="md-nav__link">
+    <span class="md-ellipsis">
+      novalidate / ngNativeValidate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      實作驗證提醒
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmodel-classname" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看 ngModel 添加的 className
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -594,69 +685,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mod09/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    第九章 ASP.NET Core Web API 與 Entity Framework Core
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mod10/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    第十章
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mod11/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    第十一章
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -672,10 +700,6 @@
   
     
     
-      
-        
-          
-        
       
         
       
@@ -698,24 +722,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../../cssFrameworks/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     CSS框架
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
@@ -723,8 +739,6 @@
             CSS框架
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
             
               
                 
@@ -803,26 +817,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typeScriptPage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TypeScript
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../markdownPage/" class="md-nav__link">
         
   
@@ -854,6 +848,95 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      兩種表單的差異
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      表單設計的選擇
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      共同的基礎組件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reactive-form-directive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reactive Form 的相關 Directive
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reactivate-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      以 Reactivate Forms 製作簡單的表單
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-driven" class="md-nav__link">
+    <span class="md-ellipsis">
+      以Template-Driven 製作表單
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#novalidate-ngnativevalidate" class="md-nav__link">
+    <span class="md-ellipsis">
+      novalidate / ngNativeValidate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      實作驗證提醒
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ngmodel-classname" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看 ngModel 添加的 className
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -869,7 +952,507 @@
 
   <h1>第六章 表單 (Form)</h1>
 
+<h2 id="_1">兩種表單的差異</h2>
+<hr />
+<table>
+<thead>
+<tr>
+<th></th>
+<th>響應式 (Reactive Form)</th>
+<th>範本驅動 (Template-driven Form)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>建立表單模型</td>
+<td>明確的在Component建立FormControl</td>
+<td>隱含式，使用指令(Diretive)在Template之中</td>
+</tr>
+<tr>
+<td>資料模型</td>
+<td>結構化、不可變</td>
+<td>非結構化、可變</td>
+</tr>
+<tr>
+<td>資料流</td>
+<td>同步</td>
+<td>非同步</td>
+</tr>
+<tr>
+<td>表單驗證</td>
+<td>函式</td>
+<td>指令</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">表單設計的選擇</h2>
+<hr />
+<ul>
+<li><strong>Reactive Form</strong><ul>
+<li>可擴展性</li>
+<li>可重用性</li>
+<li>可測試性</li>
+</ul>
+</li>
+<li><strong>Template-driven Form</strong><ul>
+<li>簡單容易</li>
+<li>擴展能力低</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="_3">共同的基礎組件</h2>
+<hr />
+<ul>
+<li><strong>FormControl</strong><ul>
+<li>管理單一輸入項 (input、select) 的值及輸入驗證狀態</li>
+</ul>
+</li>
+<li><strong>FormGroup</strong><ul>
+<li>管理一組輸入項 (FormControl、FormGroup、FormArray) 的值及輸入驗證狀態</li>
+</ul>
+</li>
+<li><strong>FormArray</strong><ul>
+<li>管理輸入項陣列的值及輸入驗證狀態</li>
+</ul>
+</li>
+<li><strong>FormBuilder</strong><ul>
+<li>用來建立 FormCotrol 的方法</li>
+</ul>
+</li>
+</ul>
+<pre class="mermaid"><code>graph LR;
+  A[class] --&gt; B[classname];
+  A --&gt; C[teacher];
+  A --&gt; D[students];
+  D --&gt; E[student];
+  D --&gt; F[student];
+  E --&gt; G[id];
+  E --&gt; H[name];
+  F --&gt; I[id];
+  F --&gt; J[name];
 
+  style A fill:#FF0000,stroke:#9370DB,stroke-width:1px;
+  style E fill:#FF0000,stroke:#9370DB,stroke-width:1px;
+  style F fill:#FF0000,stroke:#9370DB,stroke-width:1px;
+
+  style B fill:#28a745,stroke:#9370DB,stroke-width:1px;
+  style C fill:#28a745,stroke:#9370DB,stroke-width:1px;
+  style G fill:#28a745,stroke:#9370DB,stroke-width:1px;
+  style H fill:#28a745,stroke:#9370DB,stroke-width:1px;
+  style I fill:#28a745,stroke:#9370DB,stroke-width:1px;
+  style J fill:#28a745,stroke:#9370DB,stroke-width:1px;
+
+  style D fill:#007bff,stroke:#9370DB,stroke-width:1px;</code></pre>
+<p><span style="color:#FF0000" >紅色:FormGroup</span> |
+<span style="color:#28a745">綠色:FormControl</span> |
+<span style="color:#007bff">藍色:FormArray</span>  </p>
+<hr />
+<h2 id="reactive-form-directive">Reactive Form 的相關 Directive</h2>
+<hr />
+<ul>
+<li>用於將相對物件同步到DOM元素<ul>
+<li>FormControlDirective</li>
+<li>FormControlName</li>
+<li>FormGroupDirective</li>
+<li>FormGroupName</li>
+<li>FormArrayName</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="reactivate-forms">以 Reactivate Forms 製作簡單的表單</h2>
+<hr />
+<ul>
+<li>App.modules.ts 需引用 ReactiveFormsModule</li>
+</ul>
+<div class="highlight"><span class="filename">App.modules.ts</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ReactiveFormsModule</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/forms&#39;</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">@NgModule</span><span class="w"> </span><span class="p">({</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w"> </span><span class="p">...</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w"> </span><span class="k">import</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nx">BrowserModule</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nx">ReactiveFormsModule</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w"> </span><span class="p">],</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w"> </span><span class="p">...</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">})</span>
+</code></pre></div>
+<hr />
+<ul>
+<li>定義 Model 作為表單資料來源</li>
+</ul>
+<div class="highlight"><span class="filename">meeting-Room.ts</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">MeetingRoom</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="kr">constructor</span><span class="p">(</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="nx">size</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="nx">projector?</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">,</span><span class="w"> </span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="nx">TV?</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li>使用 FormBuilder 建立 Form Controls</li>
+</ul>
+<div class="highlight"><span class="filename">page1.component.ts</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">Page1Component</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="c1">// 定義一個 capacity 陣列，包含不同的會議室容量選項。</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="nx">capacity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;5人&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;10人&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;20人&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;30人&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;40人&#39;</span><span class="p">];</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="c1">// 宣告一個 FormGroup 類型的變數 meetingRoomForm，用於管理表單。</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="nx">meetingRoomForm</span><span class="o">:</span><span class="w"> </span><span class="kt">FormGroup</span><span class="p">;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="c1">// 宣告一個 MeetingRoom 類型的變數 meetingRoom，用於存儲會議室資訊。</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="nx">meetingRoom</span><span class="o">:</span><span class="w"> </span><span class="kt">MeetingRoom</span><span class="p">;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="c1">// 在構造函數中，使用 FormBuilder 來建立表單。</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="kr">constructor</span><span class="p">(</span><span class="k">public</span><span class="w"> </span><span class="nx">builder</span><span class="o">:</span><span class="w"> </span><span class="kt">FormBuilder</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="c1">// 創建一個新的 MeetingRoom 實例，並賦值給 meetingRoom 變數。</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">meetingRoom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MeetingRoom</span><span class="p">(</span><span class="mf">101</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;哥多華&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">capacity</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">);</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="c1">// 使用 FormBuilder 的 group 方法來定義表單的結構和規則。</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">meetingRoomForm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">builder</span><span class="p">.</span><span class="nx">group</span><span class="p">({</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">      </span><span class="s1">&#39;id&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">Validators</span><span class="p">.</span><span class="nx">required</span><span class="p">]],</span><span class="w"> </span><span class="c1">// 表單控件 id，必填。</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">      </span><span class="s1">&#39;name&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">Validators</span><span class="p">.</span><span class="nx">required</span><span class="p">]],</span><span class="w"> </span><span class="c1">// 表單控件 name，必填。</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">      </span><span class="s1">&#39;size&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">],</span><span class="w"> </span><span class="c1">// 表單控件 size，非必填。</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">      </span><span class="s1">&#39;projector&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">],</span><span class="w"> </span><span class="c1">// 表單控件 projector，非必填。</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">      </span><span class="s1">&#39;TV&#39;</span><span class="o">:</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">// 表單控件 TV，非必填。</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">    </span><span class="p">})</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">  </span><span class="c1">// 在組件初始化時，使用 setValue 方法將 meetingRoom 的資訊填充到表單中。</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">  </span><span class="nx">ngOnInit</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">meetingRoomForm</span><span class="p">.</span><span class="nx">setValue</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">meetingRoom</span><span class="p">);</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">  </span><span class="nx">onSubmit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">   </span><span class="c1">// 將表單的值賦給 meetingRoom 變數。</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">   </span><span class="k">this</span><span class="p">.</span><span class="nx">meetingRoom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">meetingRoomForm</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<ul>
+<li>Template 中設定 formCotrolName</li>
+</ul>
+<div class="highlight"><span class="filename">page1.component.html</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;container&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Meeting Room Form<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  <span class="p">&lt;</span><span class="nt">form</span> <span class="err">[</span><span class="na">formGroup</span><span class="err">]=&quot;</span><span class="na">meetingRoomForm</span><span class="err">&quot;</span> <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)=&#39;</span><span class="na">onSubmit</span><span class="err">()&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-group&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>名稱<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-control&#39;</span> <span class="na">formControlName</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-group&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;size&quot;</span><span class="p">&gt;</span>容納人數<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>      <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-control&#39;</span> <span class="na">formControlName</span><span class="o">=</span><span class="s">&quot;size&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="p">&lt;</span><span class="nt">option</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&quot;let cap of capacity&quot;</span> <span class="err">[</span><span class="na">value</span><span class="err">]=&#39;</span><span class="na">cap</span><span class="err">&#39;</span><span class="p">&gt;</span> {{ cap }} <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>      <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;container&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check form-check-inline&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;projector&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check-label&#39;</span><span class="p">&gt;</span>投影機<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check-input&#39;</span> <span class="na">formControlName</span><span class="o">=</span><span class="s">&quot;projector&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check form-check-inline&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;TV&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check-label&#39;</span><span class="p">&gt;</span>電視<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check-input&#39;</span> <span class="na">formControlName</span><span class="o">=</span><span class="s">&quot;TV&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;submit&#39;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;btn btn-success&#39;</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>  <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<ul>
+<li>觀察 meetingRoomForm.value 與 meetingRoom 的改變</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;container&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>meetingRoomForm.value: {{ meetingRoomForm.value | json }}<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>meetingRoom: {{ meetingRoom | json }} <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><strong><code>meetingRoomForm.value</code></strong> 會隨著用戶與表單的互動而實時更新，而 <strong><code>meetingRoom</code></strong> 的值則會在表單提交時更新，反映用戶提交的最終數據。</p>
+<hr />
+<h2 id="template-driven">以Template-Driven 製作表單</h2>
+<hr />
+<ul>
+<li>app.module 引入 FormsModule</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">FormsModule</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/forms&#39;</span><span class="p">;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kd">@NgModule</span><span class="w"> </span><span class="p">({</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w"> </span><span class="p">...</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w"> </span><span class="k">import</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="nx">BrowserModule</span><span class="p">,</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span><span class="nx">FormsModule</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w"> </span><span class="p">],</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w"> </span><span class="p">...</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="p">})</span>
+</code></pre></div>
+<hr />
+<ul>
+<li>初始化 Model 的值</li>
+</ul>
+<div class="highlight"><span class="filename">page2.component.ts</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">public</span><span class="w"> </span><span class="nx">meetingRoom</span><span class="o">:</span><span class="w"> </span><span class="kt">MeetingRoom</span><span class="p">;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">public</span><span class="w"> </span><span class="nx">capacity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;5人&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;10人&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;20人&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;30人&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;40人&#39;</span><span class="p">];</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="kr">constructor</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">meetingRoom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MeetingRoom</span><span class="p">(</span><span class="mf">101</span><span class="p">,</span><span class="s1">&#39;哥多華&#39;</span><span class="p">,</span><span class="k">this</span><span class="p">.</span><span class="nx">capacity</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="kc">false</span><span class="p">,</span><span class="kc">true</span><span class="p">);</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<ul>
+<li>使用 [(ngModel)] 及 name 指定</li>
+</ul>
+<div class="highlight"><span class="filename">page2.component.html</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;container&#39;</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;!submitted&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>會議室基本資料<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  <span class="p">&lt;</span><span class="nt">form</span> <span class="err">#</span><span class="na">roomForm</span><span class="o">=</span><span class="s">&#39;ngForm&#39;</span> <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)</span> <span class="err">=</span> <span class="err">&quot;</span><span class="na">onSubmit</span><span class="err">(</span><span class="na">roomForm</span><span class="err">)&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-group&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>名稱<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-control&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;name&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;name&#39;</span><span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&quot;</span><span class="na">meetingRoom</span><span class="err">.</span><span class="na">name</span><span class="err">&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-group&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;size&quot;</span><span class="p">&gt;</span>容納人數<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>      <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-control&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;size&#39;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&quot;</span><span class="na">meetingRoom</span><span class="err">.</span><span class="na">size</span><span class="err">&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>        <span class="p">&lt;</span><span class="nt">option</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&quot;let cap of capacity&quot;</span> <span class="err">[</span><span class="na">value</span><span class="err">]=&#39;</span><span class="na">cap</span><span class="err">&#39;</span><span class="p">&gt;</span> {{ cap }} <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>      <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-group&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check form-check-inline&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check-input&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;projector&quot;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&quot;</span><span class="na">meetingRoom</span><span class="err">.</span><span class="na">projector</span><span class="err">&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;projector&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check-label&#39;</span><span class="p">&gt;</span>投影機<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check form-check-inline&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check-input&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;TV&quot;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&quot;</span><span class="na">meetingRoom</span><span class="err">.</span><span class="na">TV</span><span class="err">&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;TV&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-check-label&#39;</span><span class="p">&gt;</span>電視<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;submit&#39;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;btn btn-success m-3&#39;</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>  <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<ul>
+<li>傳遞ngForm</li>
+<li>使用 #宣告變數 存入 ngForm 的值</li>
+<li>ngForm 管理 提供表單 及 ngModel 項目 name 的屬性，使其能夠彼此參考</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">.html</label><label for="__tabbed_1_2">.ts</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="err">#</span><span class="na">roomForm</span><span class="o">=</span><span class="s">&#39;ngForm&#39;</span> <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)</span> <span class="err">=</span> <span class="err">&quot;</span><span class="na">onSubmit</span><span class="err">(</span><span class="na">roomForm</span><span class="err">)&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nx">submitted</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nx">onSubmit</span><span class="p">(</span><span class="nx">roomForm</span><span class="o">:</span><span class="w"> </span><span class="kt">NgForm</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1">// 檢查傳入的表單是否有效。</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">roomForm</span><span class="p">.</span><span class="nx">valid</span><span class="p">)</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">roomForm</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">submitted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>認識 form 與 ngForm</p>
+<ul>
+<li>繫結到表單 <form> </form></li>
+<li>FormGroup 的最上層</li>
+<li>@OutPut</li>
+<li>ngSubmit: 按下 submit 按鈕時的事件</li>
+<li>@Input</li>
+<li>control: FormGroup 的實體</li>
+<li>controls {[key:string]:AbstractControl}：控制項的對應</li>
+</ul>
+<hr />
+<h2 id="novalidate-ngnativevalidate">novalidate / ngNativeValidate</h2>
+<hr />
+<ul>
+<li>novalidate</li>
+<li>避免預設的 HTML5 DOM 的驗證 UI 呈現</li>
+<li><form> (FormModule 或 ReactiveFormModule) 預設的定義</li>
+<li>目的：讓開發者可以自訂輸入驗證的提醒</li>
+<li>ngNativeValidate</li>
+<li>
+<p>開啟預設的 HTML5 DOM 的驗證UI呈現</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">ngNativeValidate</span><span class="p">&gt;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>...
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+</li>
+</ul>
+<hr />
+<ul>
+<li>使用 ngNativeValidate</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="err">#</span><span class="na">roomForm</span><span class="o">=</span><span class="s">&#39;ngForm&#39;</span> <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)</span> <span class="err">=</span> <span class="err">&quot;</span><span class="na">onSubmit</span><span class="err">(</span><span class="na">roomForm</span><span class="err">)&quot;</span> <span class="na">ngNativeValidate</span><span class="p">&gt;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-group&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>名稱<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-control&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;name&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;name&#39;</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>        <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&quot;</span><span class="na">meetingRoom</span><span class="err">.</span><span class="na">name</span><span class="err">&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    ...略...
+</code></pre></div>
+<p><img alt="Untitled" src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2F7846aa42-0829-4cd9-b921-3e6c2b63deba%2FUntitled.png?table=block&amp;id=a28e96f5-9d92-44c7-802d-e0bf16d972d3&amp;spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&amp;width=2000&amp;userId=179fac66-18cb-4514-8514-c86cecede625&amp;cache=v2" /></p>
+<hr />
+<ul>
+<li>使用 novalidate</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="err">#</span><span class="na">roomForm</span><span class="o">=</span><span class="s">&#39;ngForm&#39;</span> <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)</span> <span class="err">=</span> <span class="err">&quot;</span><span class="na">onSubmit</span><span class="err">(</span><span class="na">roomForm</span><span class="err">)&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-group&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>名稱<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-control&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;name&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;name&#39;</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>       <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&quot;</span><span class="na">meetingRoom</span><span class="err">.</span><span class="na">name</span><span class="err">&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    ...略...
+</code></pre></div>
+<hr />
+<h2 id="_4">實作驗證提醒</h2>
+<hr />
+<ol>
+<li>去掉 ngNativeValidate</li>
+<li>了解 輸入過程 Angular 提供那些資訊</li>
+<li>利用這些訊息呈現驗證提醒</li>
+</ol>
+<hr />
+<p>ngModel 追蹤輸入項目和驗證能力</p>
+<ul>
+<li>是否輸入項目已經被進入過了？</li>
+<li>Yes：ng-touched</li>
+<li>No：ng-untouched</li>
+<li>是否輸入項已經被變更了</li>
+<li>Yes：ng-dirty</li>
+<li>No：ng-pristine</li>
+<li>是否輸入項已經驗證通過？</li>
+<li>Yes：ng-valid</li>
+<li>No：ng-invalid</li>
+</ul>
+<hr />
+<p>如何取得ngModel 的驗證資訊</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-control&#39;</span><span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&quot;</span><span class="na">meetingRoom</span><span class="err">.</span><span class="na">name</span><span class="err">&quot;</span> <span class="na">required</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a> <span class="na">name</span><span class="o">=</span><span class="s">&quot;roomName&quot;</span> <span class="err">#</span><span class="na">roomName</span><span class="o">=</span><span class="s">&quot;ngModel&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<ul>
+<li>使用 # 命名並指向 ngModel</li>
+<li>必須搭被 [{ngModel}] 使用</li>
+<li>該物件便具有 ng-teach、ng-dirty、ng-valid … 等 bool 屬性</li>
+<li>可做為驗證輸入狀態的檢查</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;roomName.invalid&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;alert alert-danger&#39;</span><span class="p">&gt;</span>名字欄位不可空白<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<h2 id="ngmodel-classname">查看 ngModel 添加的 className</h2>
+<hr />
+<ul>
+<li>required</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-control&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;name&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;name&#39;</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&quot;</span><span class="na">meetingRoom</span><span class="err">.</span><span class="na">name</span><span class="err">&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+</code></pre></div>
+<ul>
+<li>透過 style 設定 驗證的呈現效果</li>
+<li>
+<p><strong><code>.ng-valid[required], .ng-valid.required</code></strong>：當一個必填的表單控件通過驗證時，它的左邊框會顯示為綠色。</p>
+<div class="highlight"><pre><span></span><code>![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2F3143a9ff-8db9-4752-91d0-3f11cd966b8b%2FUntitled.png?table=block&amp;id=d7f89b79-3268-4f9d-b2f4-054a6e9036b3&amp;spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&amp;width=2000&amp;userId=179fac66-18cb-4514-8514-c86cecede625&amp;cache=v2)
+</code></pre></div>
+</li>
+<li>
+<p><strong><code>.ng-dirty:not(form)</code></strong>：當表單控件的值被修改過（變得 “dirty”）且不是 <strong><code>&lt;form&gt;</code></strong> 元素時，它的邊框會顯示為藍色。</p>
+<div class="highlight"><pre><span></span><code>![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2Fd0d4d58d-5f51-43c4-9e34-a67ab1e33ef6%2FUntitled.png?table=block&amp;id=bbfd1b9a-ace7-410e-a027-1aead4ec01bc&amp;spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&amp;width=2000&amp;userId=179fac66-18cb-4514-8514-c86cecede625&amp;cache=v2)
+</code></pre></div>
+</li>
+<li>
+<p><strong><code>.ng-invalid:not(form)</code></strong>：當一個表單控件沒有通過驗證時，它的左邊框會顯示為紅色。</p>
+<div class="highlight"><pre><span></span><code>![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2Fb773cc15-243a-48fc-9cc3-1051d8a51c1d%2FUntitled.png?table=block&amp;id=46af28c8-56ed-40da-ab2a-2c25367d437c&amp;spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&amp;width=2000&amp;userId=179fac66-18cb-4514-8514-c86cecede625&amp;cache=v2)
+</code></pre></div>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="p">.</span><span class="nc">ng-valid</span><span class="o">[</span><span class="nt">required</span><span class="o">],</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span><span class="p">.</span><span class="nc">ng-valid</span><span class="p">.</span><span class="nc">required</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">    </span><span class="k">border-left</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#42A948</span><span class="p">;</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">    </span><span class="c">/* green */</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">  </span><span class="p">.</span><span class="nc">ng-dirty</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="nt">form</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">  </span><span class="p">.</span><span class="nc">ng-invalid</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="nt">form</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">    </span><span class="k">border-left</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#a94442</span><span class="p">;</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w">    </span><span class="c">/* red */</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</code></pre></div>
+<ul>
+<li>驗證錯誤時的提醒訊息</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-group&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>名稱<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;form-control&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;name&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;name&#39;</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>         <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&quot;</span><span class="na">meetingRoom</span><span class="err">.</span><span class="na">name</span><span class="err">&quot;</span> <span class="err">#</span><span class="na">roomName</span><span class="o">=</span><span class="s">&#39;ngModel&#39;</span> <span class="na">required</span><span class="p">&gt;</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;roomName.invalid&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;alert alert-danger&#39;</span><span class="p">&gt;</span>名字欄位不可空白<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><img alt="Untitled" src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2F8484d842-6a9c-4258-b59b-6af6b810df93%2FUntitled.png?table=block&amp;id=be5f85f2-b359-499e-b23c-f177575ce1dd&amp;spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&amp;width=2000&amp;userId=179fac66-18cb-4514-8514-c86cecede625&amp;cache=v2" /></p>
+<ul>
+<li>輸入驗證的視覺回饋</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nx">newMeetingRoom</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="c1">//設定新的會議室初始值</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">meetingRoom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MeetingRoom</span><span class="p">(</span><span class="mf">102</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">capacity</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="kc">false</span><span class="p">,</span><span class="kc">true</span><span class="p">);</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;button&#39;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;btn btn-primary&#39;</span> 
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    <span class="err">(</span><span class="na">click</span><span class="err">)=&#39;</span> <span class="na">roomForm</span><span class="err">.</span><span class="na">reset</span><span class="err">();</span><span class="na">newMeetingRoom</span><span class="err">();&#39;</span><span class="p">&gt;</span>新增會議室<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div>
+<ul>
+<li>提交表單按鈕</li>
+<li>在 form 元素加入 ngSubmit 指定 onSubmit 事件處理程序</li>
+<li>透過綁定 disabled 與 roomForm 變數參考表單是否通過驗證</li>
+<li>檢查輸入驗證是否通過決定是否允許按下 Submit 按鈕</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="err">#</span><span class="na">roomForm</span><span class="o">=</span><span class="s">&#39;ngForm&#39;</span> <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)</span> <span class="err">=</span> <span class="err">&quot;</span><span class="na">onSubmit</span><span class="err">(</span><span class="na">roomForm</span><span class="err">)&quot;</span> <span class="p">&gt;</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a> ...
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a> <span class="cm">&lt;!-- [disabled] 是否禁用 HTML 元素 --&gt;</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a> <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;submit&#39;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;btn btn-success m-3&#39;</span> 
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>     <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#39;</span><span class="na">roomForm</span><span class="err">.</span><span class="na">form</span><span class="err">.</span><span class="na">invalid</span><span class="err">&#39;</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div>
+<ul>
+<li>切換兩個表單的區域</li>
+<li>submitted 變數切換內容</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;container&#39;</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;!submitted&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>會議室基本資料<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>  ...略...
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;container&#39;</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;submitted&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>以下是你提交的資訊<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;table&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;row&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;col-4&#39;</span><span class="p">&gt;</span>名稱<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;col-6&#39;</span><span class="p">&gt;</span> {{ meetingRoom.name }} <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;row&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;col-4&#39;</span><span class="p">&gt;</span>容納人數<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;col-6&#39;</span><span class="p">&gt;</span> {{ meetingRoom.size }} <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;row&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;col-4&#39;</span><span class="p">&gt;</span>投影機<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;col-6&#39;</span><span class="p">&gt;</span> {{ meetingRoom.projector }} <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;row&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;col-4&#39;</span><span class="p">&gt;</span>電視<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;col-6&#39;</span><span class="p">&gt;</span> {{ meetingRoom.TV }} <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-24" name="__codelineno-21-24" href="#__codelineno-21-24"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-25" name="__codelineno-21-25" href="#__codelineno-21-25"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-26" name="__codelineno-21-26" href="#__codelineno-21-26"></a>  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-27" name="__codelineno-21-27" href="#__codelineno-21-27"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;btn btn-primary&#39;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#39;</span><span class="na">submitted</span><span class="o">=</span><span class="s">false&#39;</span><span class="p">&gt;</span>編修<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-21-28" name="__codelineno-21-28" href="#__codelineno-21-28"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-21-29" name="__codelineno-21-29" href="#__codelineno-21-29"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
 
 
 

@@ -62,7 +62,7 @@ Angular 提供可用來動態改變 DOM 元素 CSS 的指令。
 範例：目標事件名稱為 `click` ，呼叫方法為 `SayHi()`。
 
 ``` html title="事件綁定語法"
-    <button (click)="SayHi()">SayHi</button>
+<button (click)="SayHi()">SayHi</button>
 ```
 
 相當於

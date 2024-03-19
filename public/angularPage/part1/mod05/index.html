@@ -255,7 +255,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../cssFrameworks/" class="md-tabs__link">
+        <a href="../../../cssFrameworks/bootstrap/" class="md-tabs__link">
           
   
     
@@ -265,23 +265,6 @@
         </a>
       </li>
     
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../typeScriptPage/" class="md-tabs__link">
-        
-  
-    
-  
-  TypeScript
-
-      </a>
-    </li>
   
 
       
@@ -364,12 +347,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
       
         
       
@@ -497,7 +474,7 @@
         
   
   <span class="md-ellipsis">
-    第四章 HTML Binding 與 Event 的處理r
+    第四章 HTML Binding 與 Event 的處理
   </span>
   
 
@@ -744,69 +721,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mod09/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    第九章 ASP.NET Core Web API 與 Entity Framework Core
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mod10/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    第十章
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mod11/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    第十一章
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -822,10 +736,6 @@
   
     
     
-      
-        
-          
-        
       
         
       
@@ -848,24 +758,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../../cssFrameworks/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     CSS框架
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
@@ -873,8 +775,6 @@
             CSS框架
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
             
               
                 
@@ -942,26 +842,6 @@
           </ul>
         </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../typeScriptPage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TypeScript
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1280,38 +1160,26 @@
 <h2 id="dom">DOM 的檢視查詢</h2>
 <hr />
 <ul>
-<li>異動檢查器<ul>
+<li>異動檢查器</li>
 <li>會在檢視的DOM當中取得符合 type 或是 名字 (#name)</li>
 <li>在 ngAfterViewInit 之前指定檢視查詢</li>
-</ul>
-</li>
-<li>@ViewChild<ul>
+<li>@ViewChild</li>
 <li>取得第一個符合的</li>
-</ul>
-</li>
-<li>@ViewChildren<ul>
+<li>@ViewChildren</li>
 <li>取得一組符合的 QueryList</li>
-</ul>
-</li>
 </ul>
 <hr />
 <h2 id="directive">認識 Directive</h2>
 <hr />
 <ul>
-<li>Components<ul>
+<li>Components</li>
 <li>即是 前面所學的 Components 與 template</li>
-</ul>
-</li>
-<li>結構指令<ul>
+<li>結構指令</li>
 <li>控制 DOM 結構</li>
 <li>EX: ngFor , ngIf</li>
-</ul>
-</li>
-<li>屬性指令<ul>
+<li>屬性指令</li>
 <li>使用在元素的 attribute 上</li>
 <li>Ex: ngStyle , ngClass</li>
-</ul>
-</li>
 </ul>
 <hr />
 <h2 id="_3">自訂屬性指令</h2>
@@ -1362,19 +1230,17 @@ private putInTheBox( borderStyle: string ){
 <h2 id="hostlistener">@HostListener</h2>
 <hr />
 <ul>
+<li>提供元件的處理方法</li>
 <li>
-<p>提供元件的處理方法</p>
-<ul>
-<li>語法：</li>
-</ul>
+<p>語法：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">@HostListener</span><span class="p">(</span><span class="s2">&quot;事件名稱&quot;</span><span class="p">)</span><span class="w"> </span><span class="nx">事件處理程序</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
 </code></pre></div>
 </li>
 <li>
 <p>@Input 提供外部元素屬性設定</p>
-<ul>
-<li>語法：</li>
-</ul>
+</li>
+<li>
+<p>語法：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">@Input</span><span class="p">()</span><span class="w"> </span><span class="nx">borderStyle</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">inTheBox</span> <span class="na">borderStyle</span><span class="o">=</span><span class="s">&#39;dashed 3px blue&#39;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#39;300&#39;</span> <span class="err">...</span><span class="na">省略</span><span class="err">...</span><span class="p">&gt;</span>
@@ -1385,14 +1251,10 @@ private putInTheBox( borderStyle: string ){
 <h2 id="hostlistener_1">使用 @HostListener 處理 滑鼠事件</h2>
 <hr />
 <ul>
-<li>滑鼠移入時，加上圖框 mouseenter<ul>
+<li>滑鼠移入時，加上圖框 mouseenter</li>
 <li>onMouseEnter()</li>
-</ul>
-</li>
-<li>離開時，移除圖框 mouseleave<ul>
+<li>離開時，移除圖框 mouseleave</li>
 <li>onMouseLeave()</li>
-</ul>
-</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="w"> </span><span class="kd">@HostListener</span><span class="p">(</span><span class="s2">&quot;mouseenter&quot;</span><span class="p">)</span><span class="w"> </span><span class="nx">onMouseEnter</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">borderStyle</span><span class="p">)</span>
@@ -1467,15 +1329,13 @@ private putInTheBox( borderStyle: string ){
 <hr />
 <ul>
 <li>用來對於 字串、日期、數字、貨幣金額 … 等資料進行轉換及格式化</li>
-<li>內建的管道有：<ul>
+<li>內建的管道有：</li>
 <li><strong>UpperCasePipe</strong> ：uppercase  //大寫</li>
 <li><strong>LowerCasePipe</strong> ：lowercase  //小寫</li>
 <li><strong>DatePipe</strong>           ：date //日期</li>
 <li><strong>CurrencyPipe</strong>    ：currency //貨幣</li>
 <li><strong>NumberPipe</strong>     ：number //數字</li>
 <li><strong>PercentPipe</strong>      ：percent //百分</li>
-</ul>
-</li>
 </ul>
 <hr />
 <h2 id="pipe_1">套用各類型的 pipe</h2>

@@ -150,12 +150,12 @@
 ---
 
 - 異動檢查器
-    - 會在檢視的DOM當中取得符合 type 或是 名字 (#name)
-    - 在 ngAfterViewInit 之前指定檢視查詢
+  - 會在檢視的DOM當中取得符合 type 或是 名字 (#name)
+  - 在 ngAfterViewInit 之前指定檢視查詢
 - @ViewChild
-    - 取得第一個符合的
+  - 取得第一個符合的
 - @ViewChildren
-    - 取得一組符合的 QueryList
+  - 取得一組符合的 QueryList
 
 ---
 
@@ -164,13 +164,13 @@
 ---
 
 - Components
-    - 即是 前面所學的 Components 與 template
+  - 即是 前面所學的 Components 與 template
 - 結構指令
-    - 控制 DOM 結構
-    - EX: ngFor , ngIf
+  - 控制 DOM 結構
+  - EX: ngFor , ngIf
 - 屬性指令
-    - 使用在元素的 attribute 上
-    - Ex: ngStyle , ngClass
+  - 使用在元素的 attribute 上
+  - Ex: ngStyle , ngClass
 
 ---
 
@@ -234,14 +234,14 @@ export class 自訂名稱Directive {
 ---
 
 - 提供元件的處理方法
-    - 語法：
+  - 語法：
     
     ```ts
     @HostListener("事件名稱") 事件處理程序() {}
     ```
     
 - @Input 提供外部元素屬性設定
-    - 語法：
+  - 語法：
     
     ```ts
     @Input() borderStyle: string;
@@ -259,9 +259,9 @@ export class 自訂名稱Directive {
 ---
 
 - 滑鼠移入時，加上圖框 mouseenter
-    - onMouseEnter()
+  - onMouseEnter()
 - 離開時，移除圖框 mouseleave
-    - onMouseLeave()
+  - onMouseLeave()
 
 ```ts
  @HostListener("mouseenter") onMouseEnter() {
@@ -345,12 +345,12 @@ export class 自訂名稱Directive {
 
 - 用來對於 字串、日期、數字、貨幣金額 … 等資料進行轉換及格式化
 - 內建的管道有：
-    - **UpperCasePipe** ：uppercase  //大寫
-    - **LowerCasePipe** ：lowercase  //小寫
-    - **DatePipe**           ：date //日期
-    - **CurrencyPipe**    ：currency //貨幣
-    - **NumberPipe**     ：number //數字
-    - **PercentPipe**      ：percent //百分
+  - **UpperCasePipe** ：uppercase  //大寫
+  - **LowerCasePipe** ：lowercase  //小寫
+  - **DatePipe**           ：date //日期
+  - **CurrencyPipe**    ：currency //貨幣
+  - **NumberPipe**     ：number //數字
+  - **PercentPipe**      ：percent //百分
 
 ---
 
