@@ -161,4 +161,5 @@ plugins:
   - search:
       lang: ja
   # - privacy
-  - social
+  - social:
+     enabled: !ENV ['ENABLE_SOCIAL_PLUGIN', 'false']
