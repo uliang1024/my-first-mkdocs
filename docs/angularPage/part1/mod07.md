@@ -152,7 +152,7 @@ capacity = ['5人', '10人', '20人', '30人', '40人'];
 
 ```
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2F063bb164-3e06-467b-93c7-4ca03f9d0710%2FUntitled.png?table=block&id=fbeaaac5-573b-4032-ae0c-a7bd08a005cd&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+![Untitled](https://i.imgur.com/yzIDjiW.png)
 
 ---
 

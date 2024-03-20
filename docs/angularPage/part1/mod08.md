@@ -173,7 +173,7 @@ export class Page2Component {
 
 - 執行 Run
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2Fef07ba06-9af9-4d83-8e78-8ed833990289%2FUntitled.png?table=block&id=9570a689-5f1a-403a-9cc2-ae70c868a5bd&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+![Untitled](https://i.imgur.com/Hw5e14F.png)
 
 ---
 

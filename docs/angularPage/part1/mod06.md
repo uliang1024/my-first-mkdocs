@@ -339,7 +339,7 @@ constructor() {
     ...略...
 ```
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2F7846aa42-0829-4cd9-b921-3e6c2b63deba%2FUntitled.png?table=block&id=a28e96f5-9d92-44c7-802d-e0bf16d972d3&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+![Untitled](https://i.imgur.com/Y9tzoFa.png)
 
 ---
 
@@ -413,15 +413,15 @@ ngModel 追蹤輸入項目和驗證能力
 - 透過 style 設定 驗證的呈現效果
   - **`.ng-valid[required], .ng-valid.required`**：當一個必填的表單控件通過驗證時，它的左邊框會顯示為綠色。
 
-        ![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2F3143a9ff-8db9-4752-91d0-3f11cd966b8b%2FUntitled.png?table=block&id=d7f89b79-3268-4f9d-b2f4-054a6e9036b3&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+    ![Untitled](https://i.imgur.com/X7iSL54.png)
 
   - **`.ng-dirty:not(form)`**：當表單控件的值被修改過（變得 “dirty”）且不是 **`<form>`** 元素時，它的邊框會顯示為藍色。
 
-        ![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2Fd0d4d58d-5f51-43c4-9e34-a67ab1e33ef6%2FUntitled.png?table=block&id=bbfd1b9a-ace7-410e-a027-1aead4ec01bc&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+    ![Untitled](https://i.imgur.com/O6pVlqW.png)
 
   - **`.ng-invalid:not(form)`**：當一個表單控件沒有通過驗證時，它的左邊框會顯示為紅色。
 
-        ![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2Fb773cc15-243a-48fc-9cc3-1051d8a51c1d%2FUntitled.png?table=block&id=46af28c8-56ed-40da-ab2a-2c25367d437c&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+    ![Untitled](https://i.imgur.com/DnNeoXh.png)
 
 ```html
 <style>
@@ -451,7 +451,7 @@ ngModel 追蹤輸入項目和驗證能力
 </div>
 ```
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2F8484d842-6a9c-4258-b59b-6af6b810df93%2FUntitled.png?table=block&id=be5f85f2-b359-499e-b23c-f177575ce1dd&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+![Untitled](https://i.imgur.com/aKkP59H.png)
 
 - 輸入驗證的視覺回饋
 

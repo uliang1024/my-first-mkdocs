@@ -106,7 +106,7 @@
 
 - 執行結果如下圖
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2F9c9c1658-3670-42e0-ad91-7acb700139e8%2FUntitled.png?table=block&id=2583ea1e-3851-4265-b68d-be1479d017c6&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+![Untitled](https://i.imgur.com/kTdzGh8.png)
 
 ---
 
@@ -387,7 +387,7 @@ export class 自訂名稱Directive {
     <div>number: {{ vNumber2 | number:'3.5-5' }} </div>
     ```
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2Fde393781-bfe6-405f-a06d-e4f7dc0f0764%2FUntitled.png?table=block&id=93b778e3-c36a-4e6e-81b5-6dfccb2fc506&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+![Untitled](https://i.imgur.com/ECAIbxh.png)
 
 ---
 
@@ -418,4 +418,4 @@ export class USD2TWDPipe implements PipeTransform {
 <div>USD2TWD: {{ vMoney | uSD2TWD | currency }} </div>
 ```
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2F72a1fdcb-068d-4ef8-8044-91ff8f06b9b8%2FUntitled.png?table=block&id=c791c790-2301-4bf7-8adb-ca76b5e109e4&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+![Untitled](https://i.imgur.com/luHpkKK.png)

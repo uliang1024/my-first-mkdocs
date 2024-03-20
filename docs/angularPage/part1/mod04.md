@@ -1,6 +1,6 @@
 ## 綁定 (Binding)
 
-<img src="../../../assets/Binding.png" alt="Binding">
+![Binding](https://i.imgur.com/pteamM3.png)
 
 ## 屬性綁定(DOM Property Binding)
 
@@ -460,7 +460,7 @@ Step 4： 使用 *ngSwitch
 </div>
 ```
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2F80512f4c-23d7-4b13-a81f-628b8db0cab9%2FUntitled.png?table=block&id=15101f22-bb5f-4887-8d5a-70f7e4ad35a0&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=1960&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+![Untitled](https://i.imgur.com/liVfJCw.png)
 
 ## *ngSwitch
 

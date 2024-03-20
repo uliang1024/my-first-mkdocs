@@ -68,7 +68,7 @@ export class AppModule { }
 
 ## 甚麼是 MVC 架構
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F31a860b7-ebcf-4f39-85d7-5c061f335582%2Fd198e188-cb97-46f0-831e-8d2f3aef32e3%2FUntitled.png?table=block&id=824e30f9-f30b-4781-9687-a08aeaf61cd8&spaceId=31a860b7-ebcf-4f39-85d7-5c061f335582&width=2000&userId=179fac66-18cb-4514-8514-c86cecede625&cache=v2)
+![MVC](https://i.imgur.com/ord61D8.png)
 
 >圖片源自 [https://tw.alphacamp.co/blog/mvc-model-view-controller](https://tw.alphacamp.co/blog/mvc-model-view-controller)
 >
