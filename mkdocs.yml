@@ -171,10 +171,10 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       enabled: !ENV [CI, false]
-  - git-committers:
-      repository: uliang1024/my-first-mkdocs
-      branch: main
-      token: glpat-5dAYuqHCQshzJe7rhyVT
-      enabled: !ENV [CI, false]
+  # - git-committers:
+  #     repository: uliang1024/my-first-mkdocs
+  #     branch: main
+  #     token: glpat-5dAYuqHCQshzJe7rhyVT
+  #     enabled: !ENV [CI, false]
   - git-authors
   - print-site
