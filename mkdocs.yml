@@ -168,11 +168,11 @@ plugins:
   # 離線觀看
   - offline:
       enabled: !ENV [OFFLINE, false]
-  # - git-revision-date-localized:
-  #     enable_creation_date: true
-  #     enabled: !ENV [CI, false]
-  # - git-committers:
-  #     repository: squidfunk/mkdocs-material
-  #     branch: main
-  #     enabled: !ENV [CI, false]
-  # - git-authors
+  - git-revision-date-localized:
+      enable_creation_date: true
+      enabled: !ENV [CI, false]
+  - git-committers:
+      repository: uliang1024/my-first-mkdocs
+      branch: main
+      enabled: !ENV [CI, false]
+  - git-authors
