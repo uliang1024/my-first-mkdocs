@@ -7,6 +7,8 @@
 
 {% block htmltitle %} <title>U亮的筆記</title> {% endblock %}
 
+{% block content %} {% if page.url_to_print_page %} <a href="{{ page.url_to_print_page }}" title="Print Site" class="md-content__button md-icon"> {% include ".icons/material/printer.svg" %} </a> {% endif %} {{ super() }} {% endblock content %}
+
 {% block scripts %}
   {{ super() }}
 <script src="{{ 'assets/javascripts/custom.129bd6ad.min.js' | url }}"></script>
