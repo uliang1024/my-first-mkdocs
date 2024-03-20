@@ -1,0 +1,5 @@
+mkdocs>=1.5.3
+
+mkdocs-material
+
+neoteroi-mkdocs
