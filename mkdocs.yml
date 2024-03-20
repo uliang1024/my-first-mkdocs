@@ -2,7 +2,7 @@ site_name: My First MkDocs
 site_dir: public
 site_url: https://my-first-mkdocs-uliang1024-6f58a385c5137f79eb07246f3b7f965380de.gitlab.io
 
-repo_name: My GitLab Project
+repo_name: uliang1024/my-first-mkdocs
 repo_url: https://gitlab.com/uliang1024/my-first-mkdocs
 
 edit_uri: edit/main/docs/
@@ -25,7 +25,7 @@ nav:
       - "第六章 表單 (Form)": angularPage/part1/mod06.md
       - "第七章 表單驗證": angularPage/part1/mod07.md
       - "第八章 Service (DI: 依存注入) 與 HttpClient": angularPage/part1/mod08.md
-  - CSS框架: 
+  - CSS框架:
       - "Bootstrap": cssFrameworks/bootstrap.md
       - "Material UI": cssFrameworks/materialUI.md
       - "Tailwind CSS": cssFrameworks/tailwindCss.md
@@ -58,7 +58,7 @@ theme:
       primary: deep purple
       accent: light blue
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode
@@ -87,14 +87,14 @@ theme:
     - navigation.path
     # 返回頂部按鈕
     - navigation.top
-    # 
+    #
     - content.action.edit
     - content.action.view
 
 # CSS檔
 extra_css:
-    - css/extra.css
-    - css/neoteroi-timeline.css
+  - css/extra.css
+  - css/neoteroi-timeline.css
 # JS檔
 extra_javascript:
   - js/script.js
@@ -124,8 +124,7 @@ extra:
       annotation: material/arrow-right-circle
   consent:
     title: Cookie 同意
-    description:
-      我們也使用 cookie 來識別您的重複造訪和偏好
+    description: 我們也使用 cookie 來識別您的重複造訪和偏好
       衡量我們文件的有效性以及使用者是否
       找到他們正在尋找的東西。 經您同意，您正在幫助我們
       使我們的文件變得更好。
@@ -144,8 +143,10 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  # 內容選項卡
+          format:
+            !!python/name:pymdownx.superfences.fence_code_format # 內容選項卡
+
+
   - pymdownx.tabbed:
       alternate_style: true
   - admonition
@@ -170,8 +171,8 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       enabled: !ENV [CI, false]
-  - git-committers:
-      repository: squidfunk/mkdocs-material
-      branch: main
-      enabled: !ENV [CI, false]
+  # - git-committers:
+  #     repository: squidfunk/mkdocs-material
+  #     branch: main
+  #     enabled: !ENV [CI, false]
   - git-authors
