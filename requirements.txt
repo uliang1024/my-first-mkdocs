@@ -1,5 +1,6 @@
 mkdocs>=1.5.3
 
 mkdocs-material
+mkdocs-material[imaging]
 
 neoteroi-mkdocs
