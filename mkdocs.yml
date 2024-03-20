@@ -17,19 +17,18 @@ remote_name: origin
 nav:
   - Home: index.md
   - Angular筆記:
-      - "第一章 前端網頁應用的利器Angular": angularPage/part1/mod01.md
-      - "第二章 Module 與 MVC 設計模型": angularPage/part1/mod02.md
-      - "第三章 初探 Angular Route & Navigation": angularPage/part1/mod03.md
-      - "第四章 HTML Binding 與 Event 的處理": angularPage/part1/mod04.md
-      - "第五章 關於 UI 的那些是 —元件、指令、Pipe": angularPage/part1/mod05.md
-      - "第六章 表單 (Form)": angularPage/part1/mod06.md
-      - "第七章 表單驗證": angularPage/part1/mod07.md
-      - "第八章 Service (DI: 依存注入) 與 HttpClient": angularPage/part1/mod08.md
+      - "第一章 前端網頁應用的利器Angular": angularPage/mod01.md
+      - "第二章 Module 與 MVC 設計模型": angularPage/mod02.md
+      - "第三章 初探 Angular Route & Navigation": angularPage/mod03.md
+      - "第四章 HTML Binding 與 Event 的處理": angularPage/mod04.md
+      - "第五章 關於 UI 的那些是 —元件、指令、Pipe": angularPage/mod05.md
+      - "第六章 表單 (Form)": angularPage/mod06.md
+      - "第七章 表單驗證": angularPage/mod07.md
+      - "第八章 Service (DI: 依存注入) 與 HttpClient": angularPage/mod08.md
   - CSS框架:
       - "Bootstrap": cssFrameworks/bootstrap.md
       - "Material UI": cssFrameworks/materialUI.md
       - "Tailwind CSS": cssFrameworks/tailwindCss.md
-  - markdown語法: markdownPage/index.md
   - Angular Courses 2024: "https://angular-courses-2024-work-systex-ab5431191dc698292ae12b22519d6d.gitlab.io/"
 
 # 配置驗證文檔連結時 MkDocs 診斷訊息的嚴格性
@@ -43,6 +42,7 @@ theme:
   name: material
   logo: assets/Angular.png
   favicon: assets/Angular.png
+  custom_dir: overrides
   # color
   palette:
     # Palette toggle for automatic mode
@@ -93,11 +93,11 @@ theme:
 
 # CSS檔
 extra_css:
-  - css/extra.css
-  - css/neoteroi-timeline.css
+  - assets/css/extra.css
+  - assets/css/neoteroi-timeline.css
 # JS檔
 extra_javascript:
-  - js/script.js
+  - assets/js/script.js
 
 extra:
   # 設定頁腳連結
@@ -153,7 +153,7 @@ markdown_extensions:
   - pymdownx.details
   # Data tables
   - tables
-  #Neoteroi for MkDocs
+  # Neoteroi for MkDocs
   - neoteroi.timeline
 
 plugins:
@@ -171,8 +171,8 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       enabled: !ENV [CI, false]
-  # - git-committers:
-  #     repository: squidfunk/mkdocs-material
-  #     branch: main
-  #     enabled: !ENV [CI, false]
+  - git-committers:
+      repository: squidfunk/mkdocs-material
+      branch: main
+      enabled: !ENV [CI, false]
   - git-authors

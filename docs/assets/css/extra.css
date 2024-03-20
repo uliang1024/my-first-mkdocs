@@ -1,0 +1,10 @@
+th {
+    text-align: center !important;
+}
+
+td div {
+    display: flex;
+    height: 131.47px;
+    align-items: center;
+    justify-content: center;
+}

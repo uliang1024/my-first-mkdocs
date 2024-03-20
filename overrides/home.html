@@ -1,0 +1,64 @@
+{% extends "main.html" %} 
+
+{% block tabs %} 
+{{ super() }}
+<style>
+
+    .md-main__inner {
+        margin: 0
+    }
+
+    .md-content {
+        display: none
+    }
+
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none
+        }
+    }
+
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: none
+        }
+    }
+
+    .md-footer{
+        width: 100%
+    }
+</style>
+<div class='container'>
+        <div class='row m-3'>
+            <div class='col-lg-6 text mb-5'>
+                <h3>軟體精英學程-前端工程師</h3>
+                <p>精誠資訊股份有限公司</p>
+                <button type='button'>Explore</button>
+            </div>
+            <div class='col-lg-6'>
+                <div class='row'>
+                    <div class='mb-4 col-md-6 d-flex justify-content-center'>
+                        <div class="card text-bg-dark">
+                            <img src="https://squidfunk.github.io/mkdocs-material/assets/images/social/blog/2021/12/27/the-past-present-and-future.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class='mb-4 col-md-6 d-flex justify-content-center'>
+                        <div class="card text-bg-dark">
+                            <img src="https://www.neoteroi.dev/mkdocs-plugins/img/index.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class='mb-4 col-md-6 d-flex justify-content-center'>
+                        <div class="card text-bg-dark">
+                            <img src="https://miro.medium.com/v2/resize:fit:1400/1*mib0Kcy1IC1EsjNdulieWg.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class='mb-4 col-md-6 d-flex justify-content-center'>
+                        <div class="card text-bg-dark">
+                            <img src="https://sphinx-social-cards.readthedocs.io/en/latest/_images/index-476430c6f45f9ddf.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}

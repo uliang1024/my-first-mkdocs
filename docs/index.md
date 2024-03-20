@@ -1,14 +1,10 @@
----
+--- 
 
-title: 前端程式語言開發
-description: 分享關於我的學習的筆記
+title: 前端程式語言開發 
+description: 分享關於我的學習的筆記 
+template: home.html
 
----
-
-軟體精英學程-前端工程師
-===
-
-`精誠資訊股份有限公司`
+--- 
 
 <div class="grid cards" markdown>
 
@@ -22,7 +18,7 @@ description: 分享關於我的學習的筆記
 
     __補充文字__
 
-- :material-file-tree: &nbsp; __[MkDocs Plugins](https://www.neoteroi.dev/mkdocs-plugins/)__
+- :material-file-tree: &nbsp; __[Neoteroi for MkDocs](https://www.neoteroi.dev/mkdocs-plugins/)__
 
     ---
 

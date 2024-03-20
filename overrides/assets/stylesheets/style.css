@@ -1,0 +1,86 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.md-header {
+    background-color: transparent !important;
+}
+
+.md-container {
+    width: 100%;
+    min-height: calc(100vh - 2.4rem);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.md-tabs {
+    background-color: transparent !important;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 5.4rem);
+    margin: 35px 0;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3, h5, p {
+    color: #ffffffb3 !important;
+    text-shadow: 0 0 5px #999;
+    
+}
+
+a {
+    text-decoration: none !important;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card {
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-img-overlay p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.md-tabs{display: block !important ;}
