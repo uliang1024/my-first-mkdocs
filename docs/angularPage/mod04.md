@@ -1,4 +1,4 @@
-# 第四章 HTML Binding 與 Event 的處理
+# **第四章 HTML Binding 與 Event 的處理**
 
 ## 綁定 (Binding)
 
