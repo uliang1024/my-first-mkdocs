@@ -78,6 +78,7 @@ theme:
     - search.highlight
     # 搜尋分享
     - search.share
+
     # 導航選項卡
     - navigation.tabs
     # 側邊欄群組
@@ -87,7 +88,8 @@ theme:
     - navigation.path
     # 返回頂部按鈕
     - navigation.top
-    #
+
+    # “查看原始碼”按鈕
     - content.action.edit
     - content.action.view
     # Copy code
@@ -124,12 +126,16 @@ extra:
       example: octicons/beaker-16
       quote: octicons/quote-16
       annotation: material/arrow-right-circle
-  consent:
-    title: Cookie 同意
-    description: 我們也使用 cookie 來識別您的重複造訪和偏好
-      衡量我們文件的有效性以及使用者是否
-      找到他們正在尋找的東西。 經您同意，您正在幫助我們
-      使我們的文件變得更好。
+  # consent:
+  #   title: Cookie 同意
+  #   description: 我們也使用 cookie 來識別您的重複造訪和偏好
+  #     衡量我們文件的有效性以及使用者是否
+  #     找到他們正在尋找的東西。 經您同意，您正在幫助我們
+  #     使我們的文件變得更好。
+  #   actions:
+  #     - accept
+  #     - reject
+  #     - manage
 
 markdown_extensions:
   - attr_list
@@ -150,9 +156,10 @@ markdown_extensions:
           format:
             !!python/name:pymdownx.superfences.fence_code_format # 內容選項卡
 
-
+  # 內容選項卡
   - pymdownx.tabbed:
       alternate_style: true
+  # 警告
   - admonition
   - pymdownx.details
   # Data tables
@@ -172,16 +179,12 @@ plugins:
   # 離線觀看
   - offline:
       enabled: !ENV [OFFLINE, false]
+
   - git-revision-date-localized:
       enable_creation_date: true
       enabled: !ENV [CI, false]
-  - git-committers:
-      repository: uliang1024/my-first-mkdocs
-      gitlab_repository: 55943241
-      branch: main
-      token: glpat-Fg9zLfjyLvq8bWCwxxm5
-      enabled: !ENV [CI, false]
   - git-authors
+  
   - print-site: 
       print_page_title: '列印畫面'
       exclude:
