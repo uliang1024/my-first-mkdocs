@@ -32,10 +32,10 @@ nav:
   - Angular Courses 2024: "https://angular-courses-2024-work-systex-ab5431191dc698292ae12b22519d6d.gitlab.io/"
 
 # 配置驗證文檔連結時 MkDocs 診斷訊息的嚴格性
-# validation:
-#   omitted_files: warn
-#   absolute_links: warn
-#   unrecognized_links: warn
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
 
 # 主題設置
 theme:
