@@ -177,4 +177,9 @@ plugins:
   #     token: glpat-5dAYuqHCQshzJe7rhyVT
   #     enabled: !ENV [CI, false]
   - git-authors
-  - print-site
+  - print-site: 
+     exclude:
+      - cssFrameworks\bootstrap.md
+      - cssFrameworks\materialUI.md
+      - cssFrameworks\tailwindCss.md
+      - index.md

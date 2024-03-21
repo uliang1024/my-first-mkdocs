@@ -1,7 +1,13 @@
 {% extends "main.html" %} 
 
+{% block extrahead %}
+<link rel="stylesheet" href="{{ 'assets/stylesheets/style.css' }}">
+<link rel="stylesheet" href="{{ 'assets/stylesheets/bootstrap.css' }}">
+{% endblock %}
+
 {% block tabs %} 
 {{ super() }}
+
 <style>
 
     .md-main__inner {
