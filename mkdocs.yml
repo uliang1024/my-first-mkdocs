@@ -178,8 +178,8 @@ plugins:
   #     enabled: !ENV [CI, false]
   - git-authors
   - print-site: 
-     exclude:
-      - cssFrameworks\bootstrap.md
-      - cssFrameworks\materialUI.md
-      - cssFrameworks\tailwindCss.md
-      - index.md
+      exclude:
+        - cssFrameworks/bootstrap.md
+        - cssFrameworks/materialUI.md
+        - cssFrameworks/tailwindCss.md
+        - index.md
