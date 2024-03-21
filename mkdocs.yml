@@ -29,7 +29,6 @@ nav:
       - "Bootstrap": cssFrameworks/bootstrap.md
       - "Material UI": cssFrameworks/materialUI.md
       - "Tailwind CSS": cssFrameworks/tailwindCss.md
-  - 天氣API: openAPI.md
   - Angular Courses 2024: "https://angular-courses-2024-work-systex-ab5431191dc698292ae12b22519d6d.gitlab.io/"
 
 # 配置驗證文檔連結時 MkDocs 診斷訊息的嚴格性
@@ -176,11 +175,12 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       enabled: !ENV [CI, false]
-  # - git-committers:
-  #     repository: uliang1024/my-first-mkdocs
-  #     branch: main
-  #     token: glpat-5dAYuqHCQshzJe7rhyVT
-  #     enabled: !ENV [CI, false]
+  - git-committers:
+      repository: uliang1024/my-first-mkdocs
+      gitlab_repository: 55943241
+      branch: main
+      token: glpat-Fg9zLfjyLvq8bWCwxxm5
+      enabled: !ENV [CI, false]
   - git-authors
   - print-site: 
       print_page_title: '列印畫面'
@@ -188,4 +188,3 @@ plugins:
         - index.md
       add_cover_page: true
       cover_page_template: "docs/assets/templates/custom_cover_page.tpl"
-  - render_swagger
