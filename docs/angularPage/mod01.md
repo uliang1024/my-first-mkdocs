@@ -1,4 +1,4 @@
-# **第一章 前端網頁應用的利器Angular**
+# **第一章 前端網頁應用的利器Angular** :octicons-heart-fill-24:{ .heart }
 
 ## 用戶端開發的框架
 

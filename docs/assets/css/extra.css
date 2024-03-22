@@ -12,3 +12,15 @@ td div {
 img {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
+
+@keyframes heart {
+  0%, 40%, 80%, 100% {
+    transform: scale(1);
+  }
+  20%, 60% {
+    transform: scale(1.15);
+  }
+}
+.heart {
+  animation: heart 1000ms infinite;
+}

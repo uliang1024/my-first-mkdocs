@@ -1,6 +1,6 @@
 # **關於此專案**
 
-## Markdown 語法
+## **Markdown 語法**
 
 ---
 
@@ -31,7 +31,9 @@
 * [ ] 下標
 * [ ] 上標
 
-## Matarial for Mkdocs
+## **Matarial for Mkdocs**
+
+---
 
 ### 基本設定
 
@@ -147,9 +149,10 @@
     ``` yaml
     extra:
         icon:
-            annotation: material/arrow-right-circle
+            annotation: material/arrow-right-circle 
+            
     ```
-
+    
 ### 擴展 (markdown_extensions)
 
 === "警告(標註)"
@@ -227,6 +230,10 @@
       - pymdownx.tasklist:
           custom_checkbox: true
     ```
+(1)
+{ .annotate }
+
+1.  此為註釋
 
 ### 插件 (plugins)
 
@@ -270,7 +277,9 @@
       - git-authors # 文件作者
     ```
 
-## Timeline (Neoteroi Docs) 擴展
+---
+
+## **Timeline (Neoteroi Docs) 擴展**
 
 ``` yaml title="Timeline"
 extra_css:
@@ -282,7 +291,9 @@ markdown_extensions:
 
 [範例](angularPage/mod01.md#timeline)
 
-## mkdocs-print-site-plugin
+## **mkdocs-print-site-plugin**
+
+---
 
 ``` yaml
 plugins:

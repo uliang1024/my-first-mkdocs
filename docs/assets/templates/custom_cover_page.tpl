@@ -1,4 +1,4 @@
-<h1>'{{ config.site_name }}'</h1>
+<h1><strong>{{ config.site_name }}</strong></h1>
 
 <p>Angular / CSS / MkDocs</p>
 
