@@ -22,7 +22,7 @@
 * [x] 表格（Table）
 * [x] 程式碼區塊（Fenced Code Block）
 * [ ] 註腳（Footnote）
-* [ ] 標題編號（Heading ID）
+* [x] 標題編號（Heading ID）
 * [ ] 定義清單（Definition List）
 * [ ] 刪除線（Strikethrough）
 * [x] 任務清單（Task List）
@@ -230,6 +230,12 @@
 
 ### 插件 (plugins)
 
+=== "圖像縮放功能"
+
+    ``` yaml
+    plugins:
+      - glightbox 
+    ```
 === "內建搜尋插件"
 
     ``` yaml
@@ -274,6 +280,8 @@ markdown_extensions:
   - neoteroi.timeline
 ```
 
+[範例](angularPage/mod01.md#timeline)
+
 ## mkdocs-print-site-plugin
 
 ``` yaml
@@ -286,3 +294,5 @@ plugins:
       add_cover_page: true #加入封面
       cover_page_template: "docs/assets/templates/custom_cover_page.tpl" #加入封面樣式
 ```
+
+[範例](/print_page/)

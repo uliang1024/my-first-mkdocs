@@ -84,3 +84,34 @@ button {
 }
 
 .md-tabs{display: block !important ;}
+
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-from-left {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.animate-from-right {
+    animation: slideInRight 1s ease forwards;
+}

@@ -189,6 +189,8 @@ plugins:
       enabled: !ENV [CI, false]
   - git-authors
   
+  - glightbox
+
   - print-site: 
       print_page_title: '列印畫面'
       exclude:
