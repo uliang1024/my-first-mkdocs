@@ -30,6 +30,7 @@ nav:
       - "Material UI": cssFrameworks/materialUI.md
       - "Tailwind CSS": cssFrameworks/tailwindCss.md
   - Angular Courses 2024: "https://angular-courses-2024-work-systex-ab5431191dc698292ae12b22519d6d.gitlab.io/"
+  - 關於: about.md
 
 # 配置驗證文檔連結時 MkDocs 診斷訊息的嚴格性
 validation:
@@ -71,6 +72,7 @@ theme:
         name: Switch to light mode
   font:
     text: Noto Sans TC
+    code: Roboto Mono
   features:
     # 搜尋建議
     - search.suggest
@@ -83,9 +85,6 @@ theme:
     - navigation.tabs
     # 側邊欄群組
     - navigation.sections
-    - navigation.indexes
-    # 上方呈現麵包屑導航
-    - navigation.path
     # 返回頂部按鈕
     - navigation.top
 
@@ -94,6 +93,8 @@ theme:
     - content.action.view
     # Copy code
     - content.code.copy
+    # 頁腳 上一頁和下一頁的連結
+    - navigation.footer
 
 # CSS檔
 extra_css:
@@ -154,7 +155,10 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format:
-            !!python/name:pymdownx.superfences.fence_code_format # 內容選項卡
+            !!python/name:pymdownx.superfences.fence_code_format 
+  # 清單
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
   # 內容選項卡
   - pymdownx.tabbed:
